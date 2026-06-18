@@ -1,0 +1,59 @@
+name: Update DBD data & deploy
+
+# Rafraîchit les données depuis les fichiers du jeu (perks / survivants / tueurs),
+# pousse les éventuelles modifications, puis redéploie le site.
+#
+# Tourne deux fois par mois (le 1er et le 15) : cela garantit qu'il ne s'écoule
+# jamais un mois complet sans activité, ce qui empêche GitHub de désactiver le
+# planning (les workflows planifiés sont coupés après 60 jours d'inactivité du dépôt).
+on:
+  schedule:
+    - cron: "0 5 1,15 * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # pour committer/pusher les données mises à jour
+  pages: write      # pour déployer
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Rafraîchir les données depuis le jeu
+        run: python3 build_data.py --download
+
+      - name: Committer et pusher les changements
+        run: |
+          mkdir -p .github
+          date -u +"Dernière vérification des données : %Y-%m-%dT%H:%M:%SZ" > .github/last-data-check.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet -- app/; then
+            MSG="chore: vérification automatique des données (aucun changement de perk)"
+          else
+            MSG="chore: mise à jour automatique des données DBD"
+          fi
+          git commit -m "$MSG" || echo "Rien à committer."
+          git push
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./app
+      - id: deployment
+        uses: actions/deploy-pages@v4

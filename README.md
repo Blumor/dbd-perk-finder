@@ -7,6 +7,8 @@ On tape ce dont on se souvient (un effet, un personnage, un bout de description,
 mots-clés…) et le moteur de recherche remonte les compétences correspondantes, en
 **français ou en anglais**.
 
+### ▶️ **[Ouvrir l'app en ligne](https://blumor.github.io/dbd-perk-finder/)**
+
 ![FR / EN](https://img.shields.io/badge/langues-FR%20%2F%20EN-c0392b)
 
 ## Fonctionnalités

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DBD Perk Finder — Trouver une compétence Dead by Daylight</title>
+  <meta name="description" content="Recherchez toutes les compétences de Dead by Daylight (survivants et tueurs) par nom, personnage, effet ou mots-clés. FR / EN." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="fog"></div>
+
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">⛧</span>
+      <div>
+        <h1 data-i18n="title">Perk Finder</h1>
+        <p class="tagline" data-i18n="tagline">Toutes les compétences de Dead by Daylight, en un coup d'œil.</p>
+      </div>
+    </div>
+    <div class="lang-switch" role="group" aria-label="Langue">
+      <button data-lang="fr" class="lang-btn active">FR</button>
+      <button data-lang="en" class="lang-btn">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="search-zone">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14"/>
+        </svg>
+        <input id="search" type="search" autocomplete="off" data-i18n-ph="searchPlaceholder"
+               placeholder="Nom, personnage, effet, mots-clés…" />
+        <button id="clear-search" class="clear-btn" aria-label="Effacer" hidden>✕</button>
+      </div>
+      <p class="search-hint" data-i18n="searchHint">
+        Ex. « épuisé », « aura générateur », « Nurse », « se soigner plus vite »…
+      </p>
+    </section>
+
+    <section class="filters">
+      <div class="filter-group seg" id="role-filter" role="group" aria-label="Rôle">
+        <button data-role="all" class="seg-btn active" data-i18n="roleAll">Tous</button>
+        <button data-role="survivor" class="seg-btn" data-i18n="roleSurvivor">Survivants</button>
+        <button data-role="killer" class="seg-btn" data-i18n="roleKiller">Tueurs</button>
+      </div>
+
+      <div class="filter-group">
+        <select id="char-filter" aria-label="Personnage"></select>
+      </div>
+
+      <div class="filter-group">
+        <select id="sort-filter" aria-label="Tri">
+          <option value="relevance" data-i18n="sortRelevance">Pertinence</option>
+          <option value="az" data-i18n="sortAZ">A → Z</option>
+        </select>
+      </div>
+
+      <button id="reset" class="reset-btn" hidden data-i18n="reset">Réinitialiser</button>
+    </section>
+
+    <section class="chips-section">
+      <details id="effects-details" open>
+        <summary data-i18n="effectsLabel">Effets de statut</summary>
+        <div class="chips" id="effect-chips"></div>
+      </details>
+      <details id="cats-details">
+        <summary data-i18n="categoriesLabel">Catégories</summary>
+        <div class="chips" id="cat-chips"></div>
+      </details>
+    </section>
+
+    <p class="results-count" id="results-count"></p>
+    <div class="grid" id="results"></div>
+    <p class="no-results" id="no-results" hidden data-i18n="noResults">Aucune compétence ne correspond à votre recherche.</p>
+  </main>
+
+  <footer class="site-footer">
+    <p data-i18n="footer">
+      Données issues des fichiers du jeu (via dbd.tricky.lol). Projet non affilié à Behaviour Interactive.
+    </p>
+  </footer>
+
+  <script src="perks-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

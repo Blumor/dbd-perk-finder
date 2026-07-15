@@ -5629,7 +5629,7 @@
         "character": 49,
         "tunables": {
             "hinderduration": [
-                4
+                6
             ],
             "requiredgeneratorprogress%": [
                 20
@@ -5857,7 +5857,7 @@
     "S53P03": {
         "categories": null,
         "name": "Cross-Examination",
-        "description": "While in the Killer's Terror Radius, they leave Light Marks that last for {Tunable.S53P03.TrailLifetime}s that you can see. While on the Killer's Light Marks, you gain {Keyword.Elusive}. This ends after {Tunable.S53P03.StatusLinger}s.",
+        "description": "While in the Killer's Terror Radius and not being chased by the Killer, they leave Light Marks that last for {Tunable.S53P03.TrailLifetime}s that you can see. While on the Killer's Light Marks, you gain {Keyword.Elusive}. This ends after {Tunable.S53P03.StatusLinger}s.",
         "role": "survivor",
         "character": 52,
         "tunables": {

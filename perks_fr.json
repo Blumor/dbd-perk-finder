@@ -5629,7 +5629,7 @@
         "character": 49,
         "tunables": {
             "hinderduration": [
-                4
+                6
             ],
             "requiredgeneratorprogress%": [
                 20
@@ -5857,7 +5857,7 @@
     "S53P03": {
         "categories": null,
         "name": "Contre-interrogatoire",
-        "description": "Tant que vous \u00eates dans le rayon de terreur du tueur, celui-ci laisse des traces de lumi\u00e8re que vous pouvez voir et qui durent\u00a0{Tunable.S53P03.TrailLifetime}\u00a0secondes. Tant que vous \u00eates sur les marques de lumi\u00e8re du tueur, vous gagnez {Keyword.Elusive}. Ceci prend fin au bout de {Tunable.S53P03.StatusLinger}\u00a0secondes.",
+        "description": "Tant que vous \u00eates dans le rayon de terreur du tueur et que celui-ci ne vous poursuit pas, celui-ci laisse des traces de lumi\u00e8re que vous pouvez voir et qui durent\u00a0{Tunable.S53P03.TrailLifetime}\u00a0secondes. Tant que vous \u00eates sur les marques de lumi\u00e8re du tueur, vous gagnez {Keyword.Elusive}. Ceci prend fin au bout de {Tunable.S53P03.StatusLinger}\u00a0secondes.",
         "role": "survivor",
         "character": 52,
         "tunables": {

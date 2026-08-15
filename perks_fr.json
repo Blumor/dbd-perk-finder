@@ -2014,7 +2014,7 @@
     "K25P02": {
         "categories": null,
         "name": "Sort\u00a0: Jouet",
-        "description": "La premi\u00e8re fois que vous accrochez un survivant, il se retrouve maudit et un totem passif s'embrase.<br><br>Pendant {Tunable.K25P02.TotemBlockDuration}\u00a0secondes, le totem ensorcel\u00e9 est bloqu\u00e9 pour les autres survivants.<br><br>Les survivants maudits\u00a0:<br><br><ul><li>subissent {Keyword.Oblivious}.</li><li>voient l'aura du totem ensorcel\u00e9 quand ils sont dans un rayon de {Tunable.K25P02.TotemAuraRevealDistance}\u00a0m\u00e8tres autour de lui.</li></ul>",
+        "description": "La premi\u00e8re fois que vous accrochez un survivant, il se retrouve maudit et un totem passif s'embrase.<br><br>Pendant {Tunable.K25P02.TotemBlockDuration}\u00a0secondes, le totem ensorcel\u00e9 est bloqu\u00e9 pour les autres survivants.<br><br>Les survivants maudits\u00a0:<ul><li>subissent {Keyword.Oblivious}.</li><li>voient l'aura du totem ensorcel\u00e9 quand ils sont dans un rayon de {Tunable.K25P02.TotemAuraRevealDistance}\u00a0m\u00e8tres autour de lui.</li></ul>",
         "role": "killer",
         "character": 268435480,
         "tunables": {
@@ -5290,7 +5290,7 @@
     "S44P03": {
         "categories": null,
         "name": "Moment de gloire",
-        "description": "Apr\u00e8s avoir fouill\u00e9 ou d\u00e9verrouill\u00e9 {Tunable.S44P03.ChestSearchRequired} coffres, si vous n'\u00eates pas en \u00e9tat {Keyword.Broken}, lorsque vous vous retrouvez en \u00e9tat Bless\u00e9, vous subissez {Keyword.Broken}.<br><br>Au bout de {Tunable.S44P03.TimeToHeal}\u00a0secondes, si vous ne vous retrouvez pas \u00e0 terre, vous gu\u00e9rissez instantan\u00e9ment.",
+        "description": "Apr\u00e8s avoir fouill\u00e9 ou d\u00e9verrouill\u00e9 {Tunable.S44P03.ChestSearchRequired} coffre, si vous n'\u00eates pas en \u00e9tat {Keyword.Broken}, lorsque vous vous retrouvez en \u00e9tat Bless\u00e9, vous subissez {Keyword.Broken}.<br><br>Au bout de {Tunable.S44P03.TimeToHeal}\u00a0secondes, si vous ne vous retrouvez pas \u00e0 terre, vous gu\u00e9rissez instantan\u00e9ment.",
         "role": "survivor",
         "character": 43,
         "tunables": {
@@ -5420,7 +5420,7 @@
     "S47P01": {
         "categories": null,
         "name": "Ing\u00e9niosit\u00e9 apocalyptique",
-        "description": "Apr\u00e8s avoir fouill\u00e9 ou d\u00e9verrouill\u00e9 {Tunable.S47P01.ChestsRequired} coffres, lorsque vous \u00eates pr\u00e8s d'une palette bris\u00e9e, utilisez {Input.ActivatableButton1} pendant {Tunable.S47P01.InteractionDuration}\u00a0secondes pour cr\u00e9er une palette fragile.<br><br>Dans un rayon de {Tunable.S47P01.BrokenPalletsRevealDistance}\u00a0m\u00e8tres, vous voyez l'aura des palettes bris\u00e9es.",
+        "description": "Apr\u00e8s avoir fouill\u00e9 ou d\u00e9verrouill\u00e9 {Tunable.S47P01.ChestsRequired} coffre, lorsque vous \u00eates pr\u00e8s d'une palette bris\u00e9e, utilisez {Input.ActivatableButton1} pendant {Tunable.S47P01.InteractionDuration}\u00a0secondes pour cr\u00e9er une palette fragile.<br><br>Dans un rayon de {Tunable.S47P01.BrokenPalletsRevealDistance}\u00a0m\u00e8tres, vous voyez l'aura des palettes bris\u00e9es.",
         "role": "survivor",
         "character": 46,
         "tunables": {

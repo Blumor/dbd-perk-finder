@@ -5290,7 +5290,7 @@
     "S44P03": {
         "categories": null,
         "name": "Moment of Glory",
-        "description": "After you rummage or unlock {Tunable.S44P03.ChestSearchRequired} Chests, while not {Keyword.Broken}, when you become injured, gain {Keyword.Broken}.<br><br>After {Tunable.S44P03.TimeToHeal}s, if you are not downed, you are instantly healed.",
+        "description": "After you rummage or unlock {Tunable.S44P03.ChestSearchRequired} Chest, while not {Keyword.Broken}, when you become injured, gain {Keyword.Broken}.<br><br>After {Tunable.S44P03.TimeToHeal}s, if you are not downed, you are instantly healed.",
         "role": "survivor",
         "character": 43,
         "tunables": {
@@ -5420,7 +5420,7 @@
     "S47P01": {
         "categories": null,
         "name": "Apocalyptic Ingenuity",
-        "description": "After you rummage or unlock {Tunable.S47P01.ChestsRequired} Chests, while next to a Broken Pallet, use {Input.ActivatableButton1} for {Tunable.S47P01.InteractionDuration}s to create a Fragile Pallet.<br><br>Within {Tunable.S47P01.BrokenPalletsRevealDistance}m, you see the Auras of Broken Pallets.",
+        "description": "After you rummage or unlock {Tunable.S47P01.ChestsRequired} Chest, while next to a Broken Pallet, use {Input.ActivatableButton1} for {Tunable.S47P01.InteractionDuration}s to create a Fragile Pallet.<br><br>Within {Tunable.S47P01.BrokenPalletsRevealDistance}m, you see the Auras of Broken Pallets.",
         "role": "survivor",
         "character": 46,
         "tunables": {

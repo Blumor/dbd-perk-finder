@@ -45,7 +45,7 @@
                 50
             ],
             "hasteduration": [
-                3
+                4
             ]
         },
         "teachable": 40,
@@ -191,7 +191,7 @@
             "navigation"
         ],
         "name": "Atterrissage \u00e9quilibr\u00e9",
-        "description": "D\u00e8s que vous tombez d'au moins {Tunable.S05P01.RequiredFallHeight}\u00a0m\u00e8tres\u00a0:<ul><li>vous gagnez {Tunable.S05P01.Haste%}\u00a0% de {Keyword.Haste} pendant {Tunable.S05P01.HasteDuration}\u00a0secondes.</li><li>vous gagnez {Keyword.Exhausted} pendant {Tunable.S05P01.ExhaustionDuration}\u00a0secondes.</li><li>votre d\u00e9s\u00e9quilibre dure {Tunable.S05P01.FallStaggerReduction%}\u00a0% moins longtemps.</li><li>vos g\u00e9missements en tombant sont {Tunable.S05P01.FallGruntReduction%}\u00a0% plus silencieux.</li></ul>",
+        "description": "D\u00e8s que vous tombez d'au moins {Tunable.S05P01.RequiredFallHeight}\u00a0m\u00e8tres\u00a0:<ul><li>vous gagnez {Tunable.S05P01.Haste%}\u00a0% de {Keyword.Haste} pendant {Tunable.S05P01.HasteDuration}\u00a0secondes.</li><li>vous gagnez {Keyword.Exhausted} pendant {Tunable.S05P01.ExhaustionDuration}\u00a0secondes.</li><li>vous titubez {Tunable.S05P01.FallStaggerReduction%}\u00a0% moins longtemps.</li><li>vos grognements en tombant sont {Tunable.S05P01.FallGruntReduction%}\u00a0% plus silencieux.</li></ul>",
         "role": "survivor",
         "character": 4,
         "tunables": {
@@ -694,9 +694,9 @@
         "character": 268435467,
         "tunables": {
             "healpenalty%": [
-                30,
-                40,
-                50
+                20,
+                25,
+                30
             ],
             "skillcheckspeedincrease%": [
                 50
@@ -927,9 +927,9 @@
         "character": 13,
         "tunables": {
             "brokenduration": [
-                100,
-                80,
-                60
+                160,
+                140,
+                120
             ]
         },
         "teachable": 35,
@@ -1526,8 +1526,8 @@
         "tunables": {
             "actionspeedreductionpertoken%": [
                 8,
-                10,
-                12
+                9,
+                10
             ],
             "tokenspertotem": [
                 1
@@ -2151,7 +2151,7 @@
         "character": 268435482,
         "tunables": {
             "duration": [
-                70
+                90
             ],
             "regressionmodifier%": [
                 30,
@@ -2300,7 +2300,7 @@
         "character": 268435485,
         "tunables": {
             "aurarevealdistance": [
-                24
+                18
             ],
             "aurarevealduration": [
                 3,
@@ -3141,6 +3141,8 @@
                 3
             ],
             "distancetosurvivors": [
+                11,
+                12,
                 13
             ],
             "hinderedvalue": [
@@ -3166,11 +3168,6 @@
                 11,
                 12,
                 13
-            ],
-            "endtrialundetectableduration": [
-                70,
-                100,
-                130
             ]
         },
         "teachable": 35,
@@ -3203,6 +3200,66 @@
         },
         "teachable": 40,
         "image": "/Game/UI/UMGAssets/Icons/Perks/Sushi/T_UI_iconsPerks_Rampage"
+    },
+    "K44P01": {
+        "categories": null,
+        "name": "T\u00e9moin c\u00e9leste",
+        "description": "Toutes les {Tunable.K044P01.Timer}\u00a0secondes, si l'obsession se trouve au moins \u00e0 {Tunable.K044P01.Distance}\u00a0m\u00e8tres de distance de vous, vous voyez son aura pendant {Tunable.K044P01.AuraDuration}\u00a0secondes. Sinon, le survivant le plus \u00e9loign\u00e9 devient l'obsession.",
+        "role": "killer",
+        "character": 268435499,
+        "tunables": {
+            "timer": [
+                30
+            ],
+            "distance": [
+                40
+            ],
+            "auraduration": [
+                2,
+                2.5,
+                3
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Udon/T_UI_iconsPerks_CelestialWitness"
+    },
+    "K44P02": {
+        "categories": null,
+        "name": "Sort\u00a0: Sous votre coupe",
+        "description": "La premi\u00e8re fois qu'un survivant gagne un \u00e9tat de crochet, un totem passif s'embrase.<br><br>D\u00e8s qu'un survivant en train de courir gagne {Keyword.Haste} dans un rayon de {Tunable.K044P02.HasteRange}\u00a0m\u00e8tres de vous, vous recevez une alerte.<br><br>Les survivants qui courent ne peuvent pas gagner plus de {Tunable.K044P02.HasteCap}\u00a0% de {Keyword.Haste} \u00e0 la fois.",
+        "role": "killer",
+        "character": 268435499,
+        "tunables": {
+            "hastecap": [
+                25,
+                20,
+                15
+            ],
+            "hasterange": [
+                32
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Udon/T_UI_iconsPerks_HexUnderYourThumb"
+    },
+    "K44P03": {
+        "categories": null,
+        "name": "Semer la d\u00e9vastation",
+        "description": "D\u00e8s que vous endommagez un g\u00e9n\u00e9rateur, pour chaque charge qu'il a, il r\u00e9gresse {Tunable.K044P03.FasterRegression}\u00a0% plus vite. Recharge\u00a0: {Tunable.K044P03.Cooldown}\u00a0secondes.",
+        "role": "killer",
+        "character": 268435499,
+        "tunables": {
+            "fasterregression": [
+                2
+            ],
+            "cooldown": [
+                55,
+                50,
+                45
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Udon/T_UI_iconsPerks_LayWaste"
     },
     "Kindred": {
         "categories": [
@@ -3564,7 +3621,7 @@
             "tracking"
         ],
         "name": "Vocation de l'Infirmi\u00e8re",
-        "description": "Lorsque vous \u00eates dans un rayon de {Tunable.K04P03.AuraRevealDistance}\u00a0m\u00e8tres de survivants bless\u00e9s en train de soigner ou de se faire soigner, vous voyez leur aura.",
+        "description": "Lorsque vous \u00eates dans un rayon de {Tunable.K04P03.AuraRevealDistance}\u00a0m\u00e8tres de survivants en train de soigner ou de se faire soigner, vous voyez leur aura.",
         "role": "killer",
         "character": 268435459,
         "tunables": {
@@ -3949,7 +4006,7 @@
         "character": 21,
         "tunables": {
             "generatorblockduration": [
-                30
+                15
             ],
             "repairtimeneeded": [
                 55,
@@ -4805,7 +4862,7 @@
             "safeguard"
         ],
         "name": "Fait pour \u00e7a",
-        "description": "En \u00e9tat Bless\u00e9, d\u00e8s que vous finissez de soigner un autre survivant, vous gagnez {Keyword.Endurance} pendant {Tunable.S37P02.EnduranceDuration}\u00a0secondes.<br><br>Pendant que vous avez Blessure profonde, vous b\u00e9n\u00e9ficiez de {Tunable.S37P02.Haste%}\u00a0% de {Keyword.Haste}.",
+        "description": "En \u00e9tat Bless\u00e9, d\u00e8s que vous finissez de soigner un autre survivant, vous gagnez {Keyword.Endurance} pendant {Tunable.S37P02.EnduranceDuration}\u00a0secondes.<br><br>Pendant que vous avez {Keyword.DeepWound}, vous b\u00e9n\u00e9ficiez de {Tunable.S37P02.Haste%}\u00a0% de {Keyword.Haste}.",
         "role": "survivor",
         "character": 36,
         "tunables": {
@@ -5295,7 +5352,7 @@
         "character": 43,
         "tunables": {
             "chestsearchrequired": [
-                2
+                1
             ],
             "timetoheal": [
                 80,
@@ -5330,9 +5387,9 @@
         "character": 44,
         "tunables": {
             "timeofheal": [
-                80,
-                70,
-                60
+                75,
+                60,
+                45
             ]
         },
         "teachable": 35,
@@ -5425,10 +5482,10 @@
         "character": 46,
         "tunables": {
             "chestsrequired": [
-                2
+                1
             ],
             "constructiontime": [
-                4
+                3
             ],
             "brokenpalletsrevealdistance": [
                 24,
@@ -5436,7 +5493,7 @@
                 32
             ],
             "interactionduration": [
-                4
+                3
             ]
         },
         "teachable": 30,
@@ -5445,7 +5502,7 @@
     "S47P02": {
         "categories": null,
         "name": "Viens me chercher\u00a0!",
-        "description": "Lorsque vous d\u00e9crochez un survivant, en \u00e9tant en position accroupie et immobile, utilisez {Input.ActivatableButton1} pour que les survivants bless\u00e9s et en \u00e9tat critique dans un rayon de {Tunable.S47P02.EffectDistance}\u00a0m\u00e8tres\u00a0:<ul><li>ne poussent aucun g\u00e9missement de douleur pendant {Tunable.S47P02.EffectDuration}\u00a0secondes.</li><li>ne laissent aucune flaque de sang pendant {Tunable.S47P02.EffectDuration}\u00a0secondes.</li><li>ne laissent aucune marque d'\u00e9raflures pendant {Tunable.S47P02.EffectDuration}\u00a0secondes.</li></ul><br><br>Vous hurlez et le tueur voit votre aura pendant {Tunable.S47P02.AuraRevealDuration}\u00a0secondes.",
+        "description": "D\u00e8s que vous d\u00e9crochez un survivant, en \u00e9tant en position accroupie et immobile, utilisez {Input.ActivatableButton1} pour que les survivants bless\u00e9s et en \u00e9tat critique dans un rayon de {Tunable.S47P02.EffectDistance}\u00a0m\u00e8tres\u00a0:<ul><li>ne poussent aucun g\u00e9missement de douleur pendant {Tunable.S47P02.EffectDuration}\u00a0secondes.</li><li>ne laissent aucune flaque de sang pendant {Tunable.S47P02.EffectDuration}\u00a0secondes.</li><li>ne laissent aucune marque d'\u00e9raflures pendant {Tunable.S47P02.EffectDuration}\u00a0secondes.</li></ul><br><br>Vous hurlez et le tueur voit votre aura pendant {Tunable.S47P02.AuraRevealDuration}\u00a0secondes.",
         "role": "survivor",
         "character": 46,
         "tunables": {
@@ -5864,14 +5921,6 @@
             "traillifetime": [
                 10
             ],
-            "trailhastevalue": [
-                6,
-                8,
-                10
-            ],
-            "cooldown": [
-                5
-            ],
             "statuslinger": [
                 3,
                 4,
@@ -5880,6 +5929,82 @@
         },
         "teachable": 40,
         "image": "/Game/UI/UMGAssets/Icons/Perks/Sushi/T_UI_iconsPerks_CrossExamination"
+    },
+    "S54P01": {
+        "categories": null,
+        "name": "Fruits de votre travail",
+        "description": "D\u00e8s qu'un g\u00e9n\u00e9rateur est accompli, vous gagnez {Tunable.S054P01.TokensGained} jeton.<br><br>D\u00e8s que vous finissez de r\u00e9parer un g\u00e9n\u00e9rateur, pour chaque jeton\u00a0:<ul><li>vous gagnez {Tunable.S054P01.HasteValue}\u00a0% de {Keyword.Haste} pendant {Tunable.S054P01.HasteDuration}\u00a0secondes.</li><li>vous gagnez {Tunable.S054P01.HealProgress%}\u00a0% de vitesse de progression de soins.</li></ul>",
+        "role": "survivor",
+        "character": 53,
+        "tunables": {
+            "tokensgained": [
+                1
+            ],
+            "hastevalue": [
+                5
+            ],
+            "hasteduration": [
+                2
+            ],
+            "healprogress%": [
+                10,
+                15,
+                20
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Udon/T_UI_iconsPerks_FruitsOfYourLabor"
+    },
+    "S54P02": {
+        "categories": null,
+        "name": "Cri du Salut",
+        "description": "D\u00e8s que le tueur vous pourchasse\u00a0:<ul><li>vous voyez l'aura des autres survivants pendant {Tunable.S054P02.SurvivorAuraDuration}\u00a0secondes.</li><li>les survivants qui ne sont pas pourchass\u00e9s voient votre aura pendant {Tunable.S054P02.OtherSurvivorAuraDuration}\u00a0secondes.</li><li>les survivants qui ne sont pas pourchass\u00e9s voient l'aura du tueur pendant {Tunable.S054P02.OtherSurvivorAuraDuration}\u00a0secondes.</li></ul>",
+        "role": "survivor",
+        "character": 53,
+        "tunables": {
+            "survivorauraduration": [
+                1,
+                2,
+                3
+            ],
+            "killerauraduration": [
+                5
+            ],
+            "cooldown": [
+                40,
+                35,
+                30
+            ],
+            "othersurvivorauraduration": [
+                5
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Udon/T_UI_iconsPerks_SalvationsCry"
+    },
+    "S54P03": {
+        "categories": null,
+        "name": "B\u00e9n\u00e9diction\u00a0: In\u00e9branlable",
+        "description": "Pr\u00e8s d'un totem, utilisez {Input.ActivatableButton1} pour le b\u00e9nir et cr\u00e9er un totem de b\u00e9n\u00e9diction unique qui combine toutes vos b\u00e9n\u00e9dictions.<br><br>Les g\u00e9n\u00e9rateurs dans le rayon de la b\u00e9n\u00e9diction\u00a0:<ul><li>r\u00e9gressent {Tunable.S054P03.RegressionModifier}\u00a0% moins vite.</li><li>sont r\u00e9par\u00e9s\u00a0{Tunable.S054P03.RepairSpeedModifier}\u00a0% plus vite par les survivants.</li></ul><br><br>Les survivants dans le rayon d'action de la b\u00e9n\u00e9diction voient l'aura des g\u00e9n\u00e9rateurs affect\u00e9s.",
+        "role": "survivor",
+        "character": 53,
+        "tunables": {
+            "permanentprogressamount": [
+                1,
+                1.5,
+                2
+            ],
+            "regressionmodifier": [
+                50
+            ],
+            "repairspeedmodifier": [
+                8,
+                9,
+                10
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Udon/T_UI_iconsPerks_BoonSteadfast"
     },
     "Saboteur": {
         "categories": [
@@ -5912,7 +6037,7 @@
         "character": 268435461,
         "tunables": {
             "attackreductionpertoken%": [
-                4
+                5
             ],
             "maxtokens": [
                 6,
@@ -6243,7 +6368,7 @@
                 50
             ],
             "hasteduration": [
-                3
+                2
             ]
         },
         "teachable": 35,
@@ -6376,12 +6501,12 @@
         "character": 8,
         "tunables": {
             "extraprogresslost%": [
-                5,
                 4,
-                3
+                3,
+                2
             ],
             "repairnoisedistancereduction": [
-                8
+                16
             ]
         },
         "teachable": 30,
@@ -6393,7 +6518,7 @@
             "navigation"
         ],
         "name": "T\u00e9nacit\u00e9",
-        "description": "En \u00e9tat critique\u00a0:<ul><li>vous gagnez {Tunable.S12P01.Haste%}\u00a0% de {Keyword.Haste}.</li><li>vous pouvez r\u00e9cup\u00e9rer et ramper en m\u00eame temps.</li><li>vos g\u00e9missements de douleur sont {Tunable.S12P01.DyingVoiceLevelReduction%}\u00a0% plus silencieux.</li></ul>",
+        "description": "En \u00e9tat critique\u00a0:<ul><li>vous gagnez {Tunable.S12P01.Haste%}\u00a0% de {Keyword.Haste}.</li><li>vous pouvez r\u00e9cup\u00e9rer et ramper en m\u00eame temps.</li><li>vos g\u00e9missements de douleur sont {Tunable.S12P01.DyingVoiceLevelReduction%}\u00a0% plus silencieux.</li><li>Le tueur ne peut pas voir votre aura.</li></ul>",
         "role": "survivor",
         "character": 12,
         "tunables": {
@@ -6648,9 +6773,9 @@
                 15
             ],
             "recoveryincrease%": [
-                44,
-                55,
-                66
+                30,
+                35,
+                40
             ]
         },
         "teachable": 40,

@@ -45,7 +45,7 @@
                 50
             ],
             "hasteduration": [
-                3
+                4
             ]
         },
         "teachable": 40,
@@ -191,7 +191,7 @@
             "navigation"
         ],
         "name": "Balanced Landing",
-        "description": "Whenener you fall from at least {Tunable.S05P01.RequiredFallHeight}m:<ul><li>You gain {Tunable.S05P01.Haste%}% {Keyword.Haste} for {Tunable.S05P01.HasteDuration}s.</li><li>You gain {Keyword.Exhausted} for {Tunable.S05P01.ExhaustionDuration}s.</li><li>Your stagger is {Tunable.S05P01.FallStaggerReduction%}% shorter.</li><li>Your Grunts from falling are {Tunable.S05P01.FallGruntReduction%}% quieter.</li></ul>",
+        "description": "Whenever you fall from at least {Tunable.S05P01.RequiredFallHeight}m:<ul><li>You gain {Tunable.S05P01.Haste%}% {Keyword.Haste} for {Tunable.S05P01.HasteDuration}s.</li><li>You gain {Keyword.Exhausted} for {Tunable.S05P01.ExhaustionDuration}s.</li><li>Your stagger is {Tunable.S05P01.FallStaggerReduction%}% shorter.</li><li>Your Grunts from falling are {Tunable.S05P01.FallGruntReduction%}% quieter.</li></ul>",
         "role": "survivor",
         "character": 4,
         "tunables": {
@@ -694,9 +694,9 @@
         "character": 268435467,
         "tunables": {
             "healpenalty%": [
-                30,
-                40,
-                50
+                20,
+                25,
+                30
             ],
             "skillcheckspeedincrease%": [
                 50
@@ -927,9 +927,9 @@
         "character": 13,
         "tunables": {
             "brokenduration": [
-                100,
-                80,
-                60
+                160,
+                140,
+                120
             ]
         },
         "teachable": 35,
@@ -1258,7 +1258,7 @@
             "cruelty"
         ],
         "name": "Franklin's Demise",
-        "description": "Whenever you damage a Survivor with a basic attack, they drop their item.<br><br>Within {Tunable.K09P03.ItemsRevealDistance}m, you see the Auras of dropped items.",
+        "description": "Whenever you damage a Survivor with a basic-attack, they drop their item.<br><br>Within {Tunable.K09P03.ItemsRevealDistance}m, you see the Auras of dropped items.",
         "role": "killer",
         "character": 268435464,
         "tunables": {
@@ -1526,8 +1526,8 @@
         "tunables": {
             "actionspeedreductionpertoken%": [
                 8,
-                10,
-                12
+                9,
+                10
             ],
             "tokenspertotem": [
                 1
@@ -1790,7 +1790,7 @@
             "tracking"
         ],
         "name": "Hoarder",
-        "description": "When the trial starts, {Tunable.K22P01.ExtraChestsSpawned} more Chests appear.<br><br>Whenever a Survivor picks-up an item or starts unlocking a Chest within {Tunable.K22P01.RevealDistance}m of you, you are alerted.",
+        "description": "When the trial starts, {Tunable.K22P01.ExtraChestsSpawned} more Chests appear.<br><br>Whenever a Survivor picks-up an Item or starts unlocking a Chest within {Tunable.K22P01.RevealDistance}m of you, you are alerted.",
         "role": "killer",
         "character": 268435477,
         "tunables": {
@@ -1862,7 +1862,7 @@
             "cruelty"
         ],
         "name": "Starstruck",
-        "description": "While carrying a Survivor, Survivors within your Terror Radius gain {Keyword.Exposed}. This ends {Tunable.K23P01.ExposedLingerDuration}s after:<ul><li>They leave your Terror Radius.</li><li>You drop or hook the carried Survivor.</li></ul><br><br>Cooldown: {Tunable.K23P01.Cooldown}s.",
+        "description": "While carrying a Survivor, Survivors within your Terror Radius gain {Keyword.Exposed}. This ends {Tunable.K23P01.ExposedLingerDuration}s after:<ul><li>They leave your Terror Radius.</li><li>You drop or Hook the carried Survivor.</li></ul><br><br>Cooldown: {Tunable.K23P01.Cooldown}s.",
         "role": "killer",
         "character": 268435478,
         "tunables": {
@@ -1907,7 +1907,7 @@
             "obstruction"
         ],
         "name": "No Way Out",
-        "description": "The first time you hook each Survivor, you earn {Tunable.K23P03.TokensPerUniqueHook} Token.<br><br>When all Generators are completed, when a Survivor starts opening an Exit Gate:<ul><li>It is blocked {Tunable.K23P03.GateBlockBaseDuration}s, plus {Tunable.K23P03.GateBlockDurationPerToken}s for each Token.</li><li>You are alerted.</li></ul>",
+        "description": "The first time you Hook each Survivor, you earn {Tunable.K23P03.TokensPerUniqueHook} Token.<br><br>When all Generators are completed, when a Survivor starts opening an Exit Gate:<ul><li>It is blocked {Tunable.K23P03.GateBlockBaseDuration}s, plus {Tunable.K23P03.GateBlockDurationPerToken}s for each Token.</li><li>You are alerted.</li></ul>",
         "role": "killer",
         "character": 268435478,
         "tunables": {
@@ -2052,7 +2052,7 @@
     "K26P01": {
         "categories": null,
         "name": "Grim Embrace",
-        "description": "Whenever you hook a Survivor for the first time, earn {Tunable.K26P01.TokensPerUniqueHook} Token.<br><br>When you move {Tunable.K26P01.HookedDistance}m away from the hooked Survivor, all Generators are blocked for {Tunable.K26P01.GeneratorBlockDuration}s.<br><br>When you have {Tunable.K26P01.SurvivorsToBeHooked} Tokens, when you move {Tunable.K26P01.HookedDistance}m away from the hooked Survivor:<ul><li>All Generators are blocked for {Tunable.K26P01.FinalGeneratorBlockDuration}s.</li><li>You see the Obsession's Aura for {Tunable.K26P01.AuraRevealDuration}s.</li></ul>",
+        "description": "Whenever you Hook a Survivor for the first time, earn {Tunable.K26P01.TokensPerUniqueHook} Token.<br><br>When you move {Tunable.K26P01.HookedDistance}m away from the hooked Survivor, all Generators are blocked for {Tunable.K26P01.GeneratorBlockDuration}s.<br><br>When you have {Tunable.K26P01.SurvivorsToBeHooked} Tokens, when you move {Tunable.K26P01.HookedDistance}m away from the hooked Survivor:<ul><li>All Generators are blocked for {Tunable.K26P01.FinalGeneratorBlockDuration}s.</li><li>You see the Obsession's Aura for {Tunable.K26P01.AuraRevealDuration}s.</li></ul>",
         "role": "killer",
         "character": 268435481,
         "tunables": {
@@ -2151,7 +2151,7 @@
         "character": 268435482,
         "tunables": {
             "duration": [
-                70
+                90
             ],
             "regressionmodifier%": [
                 30,
@@ -2300,7 +2300,7 @@
         "character": 268435485,
         "tunables": {
             "aurarevealdistance": [
-                24
+                18
             ],
             "aurarevealduration": [
                 3,
@@ -2481,7 +2481,7 @@
             "chasing"
         ],
         "name": "Machine Learning",
-        "description": "Whenever you damage a Generator, it becomes compromised.<br><br>When that Generator is completed by Survivors:<ul><li>You gain {Tunable.K32P03.Haste%}% {Keyword.Haste} for {Tunable.K32P03.PerkDuration}s.</li><li>You gain {Keyword.Undetectable} for {Tunable.K32P03.PerkDuration}s.</li></ul><br><br>Only one Generator can be compromised at a time.",
+        "description": "Whenever you damage a Generator, it becomes Compromised.<br><br>When that Generator is completed by Survivors:<ul><li>You gain {Tunable.K32P03.Haste%}% {Keyword.Haste} for {Tunable.K32P03.PerkDuration}s.</li><li>You gain {Keyword.Undetectable} for {Tunable.K32P03.PerkDuration}s.</li></ul><br><br>Only one Generator can be compromised at a time.",
         "role": "killer",
         "character": 268435487,
         "tunables": {
@@ -2589,7 +2589,7 @@
             "trickery"
         ],
         "name": "Friends \u2018Til the End",
-        "description": "Whenever you hook a Survivor that is not the Obsession:<ul><li>The Obsession gains {Keyword.Exposed} for {Tunable.K34P02.ExposedDuration}s.</li><li>You see the Obsession's Aura for {Tunable.K34P02.AuraRevealDuration}s.</li></ul><br><br>Whenever you hook the Obsession, another Survivor:<ul><li>Screams, then you are alerted.</li><li>Becomes the Obsession.</li></ul>",
+        "description": "Whenever you Hook a Survivor that is not the Obsession:<ul><li>The Obsession gains {Keyword.Exposed} for {Tunable.K34P02.ExposedDuration}s.</li><li>You see the Obsession's Aura for {Tunable.K34P02.AuraRevealDuration}s.</li></ul><br><br>Whenever you Hook the Obsession, another Survivor:<ul><li>Screams, then you are alerted.</li><li>Becomes the Obsession.</li></ul>",
         "role": "killer",
         "character": 268435489,
         "tunables": {
@@ -3141,6 +3141,8 @@
                 3
             ],
             "distancetosurvivors": [
+                11,
+                12,
                 13
             ],
             "hinderedvalue": [
@@ -3166,11 +3168,6 @@
                 11,
                 12,
                 13
-            ],
-            "endtrialundetectableduration": [
-                70,
-                100,
-                130
             ]
         },
         "teachable": 35,
@@ -3203,6 +3200,66 @@
         },
         "teachable": 40,
         "image": "/Game/UI/UMGAssets/Icons/Perks/Sushi/T_UI_iconsPerks_Rampage"
+    },
+    "K44P01": {
+        "categories": null,
+        "name": "Celestial Witness",
+        "description": "Every {Tunable.K044P01.Timer}s, if the Obsession is at least {Tunable.K044P01.Distance}m away from you, you see their Aura for {Tunable.K044P01.AuraDuration}s. Otherwise, the farthest Survivor becomes the Obsession.",
+        "role": "killer",
+        "character": 268435499,
+        "tunables": {
+            "timer": [
+                30
+            ],
+            "distance": [
+                40
+            ],
+            "auraduration": [
+                2,
+                2.5,
+                3
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Udon/T_UI_iconsPerks_CelestialWitness"
+    },
+    "K44P02": {
+        "categories": null,
+        "name": "Hex: Under Your Thumb",
+        "description": "The first time a Survivor gains a Hook State, a Dull Totem ignites.<br><br>Whenever a running Survivor gains {Keyword.Haste} within {Tunable.K044P02.HasteRange}m of you, you are alerted.<br><br>Running Survivors cannot gain more than {Tunable.K044P02.HasteCap}% {Keyword.Haste} at a time.",
+        "role": "killer",
+        "character": 268435499,
+        "tunables": {
+            "hastecap": [
+                25,
+                20,
+                15
+            ],
+            "hasterange": [
+                32
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Udon/T_UI_iconsPerks_HexUnderYourThumb"
+    },
+    "K44P03": {
+        "categories": null,
+        "name": "Lay Waste",
+        "description": "Whenever you damage a Generator, for each Charge it has, it regresses {Tunable.K044P03.FasterRegression}% faster. Cooldown: {Tunable.K044P03.Cooldown}s.",
+        "role": "killer",
+        "character": 268435499,
+        "tunables": {
+            "fasterregression": [
+                2
+            ],
+            "cooldown": [
+                55,
+                50,
+                45
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Udon/T_UI_iconsPerks_LayWaste"
     },
     "Kindred": {
         "categories": [
@@ -3358,7 +3415,7 @@
             "cruelty"
         ],
         "name": "Mad Grit",
-        "description": "While carrying a Survivor:<ul><li>Whenever you miss a basic attack, your cooldown is {Tunable.K14P02.AttackCooldownReduction}% shorter.</li><li>Whenever you damage a Survivor with a basic attack, the carried Survivor gains no wiggle progress for {Tunable.K14P02.WigglePauseDuration}s.</li></ul>",
+        "description": "While carrying a Survivor:<ul><li>Whenever you miss a basic-attack, your cooldown is {Tunable.K14P02.AttackCooldownReduction}% shorter.</li><li>Whenever you damage a Survivor with a basic attack, the carried Survivor gains no wiggle progress for {Tunable.K14P02.WigglePauseDuration}s.</li></ul>",
         "role": "killer",
         "character": 268435469,
         "tunables": {
@@ -3564,7 +3621,7 @@
             "tracking"
         ],
         "name": "A Nurse's Calling",
-        "description": "Within {Tunable.K04P03.AuraRevealDistance}m of injured Survivors who are healing or being healed, you see their Auras.",
+        "description": "Within {Tunable.K04P03.AuraRevealDistance}m of Survivors who are healing or being healed, you see their Auras.",
         "role": "killer",
         "character": 268435459,
         "tunables": {
@@ -3949,7 +4006,7 @@
         "character": 21,
         "tunables": {
             "generatorblockduration": [
-                30
+                15
             ],
             "repairtimeneeded": [
                 55,
@@ -4805,7 +4862,7 @@
             "safeguard"
         ],
         "name": "Made for This",
-        "description": "While injured, whenever you finish healing another Survivor, you gain {Keyword.Endurance} for {Tunable.S37P02.EnduranceDuration}s.<br><br>While you have Deep Wound, you gain {Tunable.S37P02.Haste%}% {Keyword.Haste}.",
+        "description": "While injured, whenever you finish healing another Survivor, you gain {Keyword.Endurance} for {Tunable.S37P02.EnduranceDuration}s.<br><br>While you have {Keyword.DeepWound}, you gain {Tunable.S37P02.Haste%}% {Keyword.Haste}.",
         "role": "survivor",
         "character": 36,
         "tunables": {
@@ -5295,7 +5352,7 @@
         "character": 43,
         "tunables": {
             "chestsearchrequired": [
-                2
+                1
             ],
             "timetoheal": [
                 80,
@@ -5330,9 +5387,9 @@
         "character": 44,
         "tunables": {
             "timeofheal": [
-                80,
-                70,
-                60
+                75,
+                60,
+                45
             ]
         },
         "teachable": 35,
@@ -5425,10 +5482,10 @@
         "character": 46,
         "tunables": {
             "chestsrequired": [
-                2
+                1
             ],
             "constructiontime": [
-                4
+                3
             ],
             "brokenpalletsrevealdistance": [
                 24,
@@ -5436,7 +5493,7 @@
                 32
             ],
             "interactionduration": [
-                4
+                3
             ]
         },
         "teachable": 30,
@@ -5864,14 +5921,6 @@
             "traillifetime": [
                 10
             ],
-            "trailhastevalue": [
-                6,
-                8,
-                10
-            ],
-            "cooldown": [
-                5
-            ],
             "statuslinger": [
                 3,
                 4,
@@ -5880,6 +5929,82 @@
         },
         "teachable": 40,
         "image": "/Game/UI/UMGAssets/Icons/Perks/Sushi/T_UI_iconsPerks_CrossExamination"
+    },
+    "S54P01": {
+        "categories": null,
+        "name": "Fruits of Your Labor",
+        "description": "Whenever a Generator is completed, you earn {Tunable.S054P01.TokensGained} Token.<br><br>Whenever you finish repairing a Generator, for each Token:<ul><li>You gain {Tunable.S054P01.HasteValue}% {Keyword.Haste} for {Tunable.S054P01.HasteDuration}s.</li><li>You gain {Tunable.S054P01.HealProgress%}% healing progress.</li></ul>",
+        "role": "survivor",
+        "character": 53,
+        "tunables": {
+            "tokensgained": [
+                1
+            ],
+            "hastevalue": [
+                5
+            ],
+            "hasteduration": [
+                2
+            ],
+            "healprogress%": [
+                10,
+                15,
+                20
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Udon/T_UI_iconsPerks_FruitsOfYourLabor"
+    },
+    "S54P02": {
+        "categories": null,
+        "name": "Salvation's Cry",
+        "description": "Whenever the Killer starts chasing you:<ul><li>You see the Auras of other Survivors for {Tunable.S054P02.SurvivorAuraDuration}s.</li><li>Survivors not being chased see your Aura for {Tunable.S054P02.OtherSurvivorAuraDuration}s.</li><li>Survivors not being chased see the Killer's Aura for {Tunable.S054P02.OtherSurvivorAuraDuration}s.</li></ul>",
+        "role": "survivor",
+        "character": 53,
+        "tunables": {
+            "survivorauraduration": [
+                1,
+                2,
+                3
+            ],
+            "killerauraduration": [
+                5
+            ],
+            "cooldown": [
+                40,
+                35,
+                30
+            ],
+            "othersurvivorauraduration": [
+                5
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Udon/T_UI_iconsPerks_SalvationsCry"
+    },
+    "S54P03": {
+        "categories": null,
+        "name": "Boon: Steadfast",
+        "description": "While next to a Totem, use {Input.ActivatableButton1} to bless it, creating a unique Boon Totem that combines all your Boons.<br><br>Generators within the Boon's range:<ul><li>Regress {Tunable.S054P03.RegressionModifier}% slower.</li><li>Survivors repair them\u00a0{Tunable.S054P03.RepairSpeedModifier}% faster.</li></ul><br><br>Survivors within the Boon's range see the Auras of affected Generators.",
+        "role": "survivor",
+        "character": 53,
+        "tunables": {
+            "permanentprogressamount": [
+                1,
+                1.5,
+                2
+            ],
+            "regressionmodifier": [
+                50
+            ],
+            "repairspeedmodifier": [
+                8,
+                9,
+                10
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Udon/T_UI_iconsPerks_BoonSteadfast"
     },
     "Saboteur": {
         "categories": [
@@ -5912,7 +6037,7 @@
         "character": 268435461,
         "tunables": {
             "attackreductionpertoken%": [
-                4
+                5
             ],
             "maxtokens": [
                 6,
@@ -6243,7 +6368,7 @@
                 50
             ],
             "hasteduration": [
-                3
+                2
             ]
         },
         "teachable": 35,
@@ -6284,7 +6409,7 @@
             "support"
         ],
         "name": "Streetwise",
-        "description": "The first time you deplete an Item's Charges, you see the Killer's Aura for {Tunable.S05P03.AuraRevealDuration}s.<br><br>Whenever you loot an item from a Chest, it has {Tunable.S05P03.BonusMaxChargePercentages%}% more Charges.",
+        "description": "The first time you deplete an item's Charges, you see the Killer's Aura for {Tunable.S05P03.AuraRevealDuration}s.<br><br>Whenever you loot an item from a Chest, it has {Tunable.S05P03.BonusMaxChargePercentages%}% more Charges.",
         "role": "survivor",
         "character": 4,
         "tunables": {
@@ -6376,12 +6501,12 @@
         "character": 8,
         "tunables": {
             "extraprogresslost%": [
-                5,
                 4,
-                3
+                3,
+                2
             ],
             "repairnoisedistancereduction": [
-                8
+                16
             ]
         },
         "teachable": 30,
@@ -6393,7 +6518,7 @@
             "navigation"
         ],
         "name": "Tenacity",
-        "description": "While downed:<ul><li>You gain {Tunable.S12P01.Haste%}% {Keyword.Haste}.</li><li>You can crawl and recover at the same time.</li><li>Your Grunts of Pain are {Tunable.S12P01.DyingVoiceLevelReduction%}% quieter.</li></ul>",
+        "description": "While downed:<ul><li>You gain {Tunable.S12P01.Haste%}% {Keyword.Haste}.</li><li>You can crawl and recover at the same time.</li><li>Your Grunts of Pain are {Tunable.S12P01.DyingVoiceLevelReduction%}% quieter.</li><li>The Killer cannot see your Aura.</li></ul>",
         "role": "survivor",
         "character": 12,
         "tunables": {
@@ -6648,9 +6773,9 @@
                 15
             ],
             "recoveryincrease%": [
-                44,
-                55,
-                66
+                30,
+                35,
+                40
             ]
         },
         "teachable": 40,

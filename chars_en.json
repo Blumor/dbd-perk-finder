@@ -1324,6 +1324,31 @@
             "S53P03"
         ]
     },
+    "53": {
+        "id": "S54",
+        "name": "Aurora Stardotter",
+        "role": "survivor",
+        "difficulty": "intermediate",
+        "gender": "female",
+        "height": "average",
+        "bio": "Aurora Stardotter is viewed as a savior to her people and gains insight into the future by reading the stars.<br><br>Her personal perks, <b>Fruits of Your Labor</b>, <b>Salvation's Cry</b>, and <b>Boon: Steadfast</b>, allow for special advantages when completing Generators, strategic coordination during chases, and efficient Generator repairs.",
+        "story": "<i>Excerpts from The Queen Rylan Book of the Reformed Aurorans:</i><br><br>\u201cAnd so, at the center of Ultracapitalis, the Council decreed that Aurora Stardotter and the captive Searchers would be put to death. They were brought in chains to a grand festival and subjected to Inquisition for the people\u2019s amusement. With bloodied hands, the Council vowed all Searchers would one day be destroyed, just as the First Searcher was destroyed long ago.<br><br>But as the executions began, a great calamity descended upon Ultracapitalis, and Its name among the Celestials was Judgment. And Judgment said, \u2018You who reign over Terra Primus have dared seek the power of the Gods, and you who follow have let them. Thus you have all been judged!\u2019<br><br>And from Judgment came a great beam of light that tore the city asunder. The dataplexes and preon streams were eradicated, and the sentio-circuitry of the people fell dormant.<br><br>The Council was struck down in the burning light, as were children, and mothers, and Searchers alike.<br><br>From the destruction emerged Aurora, and she beheld ruin where Ultracapitalis had stood. And so, she sought the last of the Searchers, for they had been her family since she renounced mother and father and took on the name of Stardotter.\u201d <b>(Marika's Declaration, 9:14-20)</b><br><br><br><br>\u201cAlong her path lay many dead, some felled by Judgment, others slain by barbarians who fought for land and bread. Seeking shelter within a cave, Aurora discovered eight wretches she had once known as Searchers.<br><br>She said, \u2018Upon your feet, Searchers! Would your souls dim while the stars yet shine? Bring unto me your telereceptor, that I may look upon the cosmos.\u2019 And her keen eye beheld the prophecies of the heavens, and she guided the Searchers to sweet waters and steep hills.\u201d <b>(Sang Legat, 4:10)</b><br><br><br><br>\u201cWith the passing of years, Judgment would return many times over to raze Terra Primus, shattering the land and drying the rivers. Yet by Aurora's gaze, studying the revelations of the stars, the settlement of Stellanatis endured.<br><br>The tribes of the wastes were less fortunate, and suffering led to greater savagery. All coveted the fruits of Stellanatis, yet none more than the Arbiters who revered Judgment and killed in Its name, not from faith but from craven fear.<br><br>The Arbiters struck at Stellanatis many times. Some they slew, others they enslaved. Yet Aurora refused to bow to such malice. Through her telereceptor, she foresaw the Arbiters\u2019 schemes in the cosmos and when they next marched to Stellanatis, they found Aurora alone before them and many weapons pointed to their backs. Defeated, they fled to the wastes, for they could not stand against the woman who walked with fate.\u201d <b>(Larichus, 10:1-5)</b><br><br><br><br>\u201cIn time, the tribes of the wastes saw their folly, for they had lost more than they could bear. And so, their leaders came to the gates of Stellanatis, cast down their weapons, and begged Aurora for salvation. And out of great mercy, Aurora welcomed the tribes, and made them as one. The people were filled with faith, and in her name they called themselves Aurorans.\u201d <b>(Transgressions, 5:12)</b><br><br>\u201cFor many seasons, the land knew peace, until Judgment returned and struck the walls of Stellanatis until there were great hills of dust in their place. Aurora cast herself before the Celestial and said, \u2018Deliver these people from your wrath, for it is I they follow. Judge me, for I would climb to the heavens and cleanse the Celestials in a sea of fire.\u2019<br><br>In the face of this defiance, Judgment declared, \u2018Your people are a rot upon the universe, protected by your hand. Your sentence is exile, and in your absence, your people shall lay waste to all that you have built, and they shall drown in the blood they shed upon their kin.\u2019<br><br>And Judgment struck Aurora with blinding light, and in the place she once stood was nothing, and the people fell to their knees and wept for their lost savior. Yet as Aurora\u2019s shout lingered, it brought forth a great cloud of Darkest Shadow. Judgment cried in fear and though It tried to escape, Darkest Shadow took hold and grew until a black tower stood above Stellanatis, and when it drew away, Judgment was no more.\u201d <b>(Kelglen's Declaration, 14:11-15)</b><br><br><br><br>\u201cThe Aurorans rejoiced, for finally they were free from Judgment. They wandered the lands, proclaiming that though Aurora was exiled, they would follow the example of her Darkest Shadow: all who opposed the Aurorans would be consumed by black smoke. First they set the Arbiters upon the flames, and then the unbelievers also, so that Aurora might return to a world made pure.<br><br>Such is the path of Aurora Stardotter.<br><br>Such is the path of Darkest Shadow.\u201d <b>(Marika's Declaration, 25:6)</b>",
+        "image": "UI/Icons/CharPortraits/Udon/T_UI_S54_Aurora_Portrait.png",
+        "abilities": null,
+        "tunables": null,
+        "item": null,
+        "outfit": [
+            "S54_Head01",
+            "S54_Torso01",
+            "S54_Legs01"
+        ],
+        "dlc": "Udon",
+        "perks": [
+            "S54P01",
+            "S54P02",
+            "S54P03"
+        ]
+    },
     "268435456": {
         "id": "Chuckles",
         "name": "The Trapper",
@@ -3359,7 +3384,7 @@
             "DronePlacement_XYDistanceFromOtherDrone": 1200,
             "DronePlacement_ZDistanceFromOtherDrone": 250,
             "DronePlacement_XYDistanceFromHookSurvivors": 1200,
-            "DronePlacement_ZDistanceFromHookSurvivors": 800,
+            "DronePlacement_ZDistanceFromHookSurvivors": 250,
             "DronePlacement_ClearanceRadiusAroundDrone": 35,
             "DronePlacement_MinHeightAboveGround": 150,
             "DronePlacement_MaxHeightAboveGround": 250,
@@ -4411,6 +4436,54 @@
             "K43P01",
             "K43P02",
             "K43P03"
+        ]
+    },
+    "268435499": {
+        "id": "K44",
+        "name": "The Judgment",
+        "role": "killer",
+        "difficulty": "veryhard",
+        "gender": "nothuman",
+        "height": "tall",
+        "bio": "The Judgment enforces the will of The Creators with Its Divine Light.<br><br>Its personal perks, <b>Celestial Witness</b>, <b>Hex: Under Your Thumb</b>, and <b>Lay Waste</b>, allow It to track the Obsession, limit and surveil Survivors with Haste, and increase generator regression.",
+        "story": "<i>Recovered Fragments from the Arbiters\u2019 Book of Letters:</i><br><br>\u201cWould you be counted among the heretics cleansed from this world? Or do you aspire to prove yourself to Judgment time and again, as we have proved ourselves? Then heed well these words, for their collective wisdom have saved us and, we pray, will save us still each time It returns.\u201d <b>(I Barbarians, ch. 3)</b><br><br>\u201cSome of you ask, \u2018What was life before Judgment?\u2019 Those old enough to remember dare not tell, but know that the world called Terra Primus was rife with sin and heresy. The faithless built great and terrible monuments to themselves, cities reaching into the sky, ships that pierced the heavens, and unholy machines that reached across worlds. The rulers of Terra Primus elevated themselves as gods, and in their wisdom, the Celestials sent Judgment so that we may see the error of our ways and suffer for it.\u201d <b>(Truths Revealed, ch. 5)</b><br><br>\u201cDo not seek to return to the old ways, for the towers and technologies of Terra Primus were heresy.\u201d <b>(Laws from Beyond, ch. 15)</b><br><br>\u201cRemember the settlement of Dend. Remember Lucia the Mother, who offered up her babe to Judgment and declared \u201cgreat Celestial, bear witness to my devotion!\u201d and plunged the knife into her only child. Judgment brought its light upon the people of Dend regardless, as punishment for sacrificing the innocent.\u201d <b>(I Barbarians, ch. 11)</b><br><br>\u201cBuild only that which allows you to live. Sow only that which is needed to eat. To do more than this is heresy and must be punished.\u201d <b>(Laws from Beyond, ch. 1)</b><br><br>\u201cRemember that even the one who built the first shrine to Judgment was burned in Its light. Of all in the encampment, the only one spared was Koenrad the Pious, who pierced his hands upon the shrine.\u201d <b>(I Barbarians, ch. 12)</b><br><br>\u201cTo worship is to suffer. Do not forget your worship but refrain from overindulging. The extent to which you must suffer is for you to discover. Anything more or less is heresy and must be punished.\u201d <b>(Laws from Beyond, ch. 2)</b><br><br>\u201cSome of you ask of the Celestials, saying \u2018What is their nature? What is the order of their echelon?\u2019 Know that their nature is unknowable, that their order is the ultimate order. Know that Judgment is the favorite of the echelon, that It represents all that is right and just across all time and all worlds.\u201d <b>(Truths Revealed, ch. 2)</b><br><br>\u201cDo not seek answers outside of Judgment, for any deviation from the will of the Gods is heresy and must be punished.\u201d <b>(Laws from Beyond, ch. 5)</b><br><br>\u201cRemember Gerhardt the Blind, who tore out his own eyes as testament to the trust he placed in Judgment. Gerhardt proved himself worthy and his death from old age was a gift from Judgment. But remember also those who followed in his example and tore out their own eyes. They were burned in Judgment\u2019s light, as punishment for their bare-faced imitation.\u201d <b>(II Barbarians, ch. 7)</b><br><br>\u201cFear is faith. Fear is love for Judgment. To live a life without fear is heresy, and must be punished.\u201d <b>(Laws from Beyond, ch. 5)</b><br><br>\u201cSome of you ask, \u2018Why does Stardotter the Deceiver prosper? She builds beyond what is needed and stores food and wealth. She does not worship, she seeks answers in the stars. Why do her repeated heresies go unpunished while we starve and strive to see our siblings, spouses, and children burn in Judgment\u2019s light?\u2019 Know that Stardotter the Deceiver lives so that we may punish her, and all who follow her. This is the greatest test of our worthiness, and Judgment permits us to live so that we may triumph over her.\u201d <b>(Truths Revealed, ch. 3)</b><br><br>\u201cLook to your neighbors, and see that they are righteous in word and action. Granting mercy to heretics is itself heresy, and must be punished.\u201d <b>(Laws from Beyond, ch. 8)</b><br><br>\u201cRemember Ragnar the Traitor. Once a proud hunter of heretics, she abandoned The Arbiters and sought protection under the shadow of Stardotter the Deceiver. Protection she did not find, for when Judgment returned the following year, Ragnar was destroyed in Its light.\u201d <b>(III Barbarians, ch. 6)</b><br><br>\u201cTurn your ears away from those who followed the Deceiver. Ignore tales of black fog or dark shadows. Punish those who would talk of the Deceiver triumphing over Judgment. Engaging with the enemy\u2019s lies is heresy and must be punished.\u201d <b>(Laws from Beyond, ch. 3)</b><br><br>\u201cLet these be the last words of The Arbiters. Judgment has not returned in twelve winters, not since It destroyed Stardotter the Deceiver. But even though our God is gone, and the heretics who call themselves Auroran have brought us low, we will never waver in our devotion. Judgment will surely return, and we will be remembered as the ones who remained faithful. It is our grim responsibility, for our children, and for our children\u2019s children, to fight against heresy and create a new world in Judgment\u2019s image.\u201d <b>(Final Testament, ch. 11)</b>",
+        "image": "UI/Icons/CharPortraits/Udon/T_UI_K44_TheJudgment_Portrait.png",
+        "abilities": {
+            "K044HazardLocationStrategy_AtSurvivor_0": {
+                "frontBackOffsetFromSurvivor": 75,
+                "sideOffsetFromSurvivor": 50,
+                "minDistanceFromOtherHazards": 400,
+                "maxTries": 3
+            },
+            "DA_K044SinAbilityData": {
+                "needToCrouchWithinDistanceFromKiller": 1000,
+                "needToGestureWithinDistanceFromKiller": 1000,
+                "timeInExileAreaToGainSin": 45,
+                "sinDecayDuration": 30,
+                "killerInstinctEffectDurationWhenOtherSurvivorBanished": 3,
+                "blockExitGateDuration": 8,
+                "maxKillerDistanceWhenBlockingExitGate": 3200,
+                "goodSkillCheckPenalty": 0.029999999329447746
+            }
+        },
+        "tunables": {
+            "MaxWalkSpeed": 440,
+            "CarryingCamperMaxWalkSpeedPercent": 0.800000011920929,
+            "TerrorRadius": 3200,
+            "FarHitDistance": 1600,
+            "DistanceThresholdForGeneratorNearShrines": 1600
+        },
+        "item": "Item_K44Power",
+        "outfit": [
+            "K44_Head01",
+            "K44_Body01",
+            "K44_Weapon01"
+        ],
+        "dlc": "Udon",
+        "perks": [
+            "K44P01",
+            "K44P02",
+            "K44P03"
         ]
     }
 }

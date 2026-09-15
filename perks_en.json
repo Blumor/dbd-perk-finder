@@ -835,7 +835,7 @@
             "tracking"
         ],
         "name": "Deathbound",
-        "description": "Whenever a Survivor finishes healing another, they scream. Then, until they take damage, while they are at least {Tunable.K20P03.MaximumDistance}m away from that Survivor:<ul><li>They gain {Keyword.Oblivious}.</li><li>They see that Survivor's Aura.</li></ul>",
+        "description": "Whenever a Survivor finishes healing another, the healer screams. Then, until the healer takes damage, while they are at least {Tunable.K20P03.MaximumDistance}m away from the healed Survivor:<li>The healer gains {Keyword.Oblivious}.</li><li>The healer sees the healed Survivor's Aura.</li><br><br>This can only apply to one Survivor at a time.",
         "role": "killer",
         "character": 268435475,
         "tunables": {
@@ -2014,7 +2014,7 @@
     "K25P02": {
         "categories": null,
         "name": "Hex: Plaything",
-        "description": "The first time you hook each Survivor, they are hexed and a Dull Totem ignites.<br><br>For {Tunable.K25P02.TotemBlockDuration}s, the Hex Totem is blocked to other Survivors.<br><br>The hexed Survivors:<br><br><ul><li>Gain {Keyword.Oblivious}.</li><li>Within {Tunable.K25P02.TotemAuraRevealDistance}m of the Hex totem, they see its Aura.</li></ul>",
+        "description": "The first time you hook each Survivor, they are hexed and a Dull Totem ignites.<br><br>For {Tunable.K25P02.TotemBlockDuration}s, the Hex Totem is blocked to other Survivors.<br><br>The hexed Survivors:<br><br><ul><li>Gain {Keyword.Oblivious}.</li><li>Within {Tunable.K25P02.TotemAuraRevealDistance}m of the Hex Totem, they see its Aura.</li></ul>",
         "role": "killer",
         "character": 268435480,
         "tunables": {
@@ -2105,7 +2105,7 @@
     "K26P03": {
         "categories": null,
         "name": "Hex: Pentimento",
-        "description": "You see the Auras of cleansed Totems, and can rekindle each once.<br><br>Within {Tunable.K26P03.TotemAuraReveaDistance}m, Survivors see the Auras of Rekindled Totems.<br><br>While a totem is rekindled, Survivors heal and repair {Tunable.K26P03.BaseActionSpeedPenalty%}% slower, plus {Tunable.K26P03.ActionSpeedPenaltyPerTotem%}% for each additional Rekindled Totem.<br><br>When all {Tunable.K26P03.MaxTokens} Totems are rekindled at once, they are blocked.",
+        "description": "You see the Auras of cleansed Totems, and can rekindle each once.<br><br>Within {Tunable.K26P03.TotemAuraReveaDistance}m, Survivors see the Auras of Rekindled Totems.<br><br>While a Totem is rekindled, Survivors heal and repair {Tunable.K26P03.BaseActionSpeedPenalty%}% slower, plus {Tunable.K26P03.ActionSpeedPenaltyPerTotem%}% for each additional Rekindled Totem.<br><br>When all {Tunable.K26P03.MaxTokens} Totems are rekindled at once, they are blocked.",
         "role": "killer",
         "character": 268435481,
         "tunables": {
@@ -2295,7 +2295,7 @@
     "K30P01": {
         "categories": null,
         "name": "Nowhere to Hide",
-        "description": "Whenever you damage a Generator, for {Tunable.K30P01.AuraRevealDuration}s, you see the Auras of Survivors within {Tunable.K30P01.AuraRevealDistance}m of you.",
+        "description": "Whenever you damage a Generator, for {Tunable.K30P01.AuraRevealDuration}s, you see the Auras of Survivors within {Tunable.K30P01.AuraRevealDistance}m of it.",
         "role": "killer",
         "character": 268435485,
         "tunables": {
@@ -2481,7 +2481,7 @@
             "chasing"
         ],
         "name": "Machine Learning",
-        "description": "Whenever you damage a Generator, it becomes Compromised.<br><br>When that Generator is completed by Survivors:<ul><li>You gain {Tunable.K32P03.Haste%}% {Keyword.Haste} for {Tunable.K32P03.PerkDuration}s.</li><li>You gain {Keyword.Undetectable} for {Tunable.K32P03.PerkDuration}s.</li></ul><br><br>Only one Generator can be compromised at a time.",
+        "description": "Whenever you damage a Generator, it becomes compromised.<br><br>When that Generator is completed by Survivors:<ul><li>You gain {Tunable.K32P03.Haste%}% {Keyword.Haste} for {Tunable.K32P03.PerkDuration}s.</li><li>You gain {Keyword.Undetectable} for {Tunable.K32P03.PerkDuration}s.</li></ul><br><br>Only one Generator can be compromised at a time.",
         "role": "killer",
         "character": 268435487,
         "tunables": {
@@ -3095,7 +3095,7 @@
     "K42P02": {
         "categories": null,
         "name": "Secret Project",
-        "description": "Whenever a totem is blessed or cleansed, a random unblocked Generator is blocked for {Tunable.K42P02.BlockDuration}s.<br><br>Whenever 1 or more Generators are blocked, you gain {Keyword.Undetectable} for {Tunable.K42P02.UndetectableDuration}s.",
+        "description": "Whenever a Totem is blessed or cleansed, a random unblocked Generator is blocked for {Tunable.K42P02.BlockDuration}s.<br><br>Whenever 1 or more Generators are blocked, you gain {Keyword.Undetectable} for {Tunable.K42P02.UndetectableDuration}s.",
         "role": "killer",
         "character": 268435497,
         "tunables": {
@@ -3575,7 +3575,7 @@
             "safeguard"
         ],
         "name": "No One Left Behind",
-        "description": "When all Generators are completed:<ul><li>You heal {Tunable.SG_No_One_Left_Behind.ActionSpeed%}% faster.</li><li>You unhook other Survivors {Tunable.SG_No_One_Left_Behind.ActionSpeed%}% faster.</li><li>Whenever you unhook a Survivor, they gain {Tunable.SG_No_One_Left_Behind.IncreasedHaste%}% more {Keyword.Haste}.</li><li>You see the Auras of other Survivors.</li></ul>",
+        "description": "When all Generators are completed:<ul><li>You heal other Survivors {Tunable.SG_No_One_Left_Behind.ActionSpeed%}% faster.</li><li>You unhook other Survivors {Tunable.SG_No_One_Left_Behind.ActionSpeed%}% faster.</li><li>Whenever you unhook a Survivor, they gain {Tunable.SG_No_One_Left_Behind.IncreasedHaste%}% more {Keyword.Haste}.</li><li>You see the Auras of other Survivors.</li></ul>",
         "role": "survivor",
         "character": null,
         "tunables": {
@@ -4320,7 +4320,7 @@
     "S28P02": {
         "categories": null,
         "name": "Boon: Circle of Healing",
-        "description": "While next to a totem, use {Input.ActivatableButton1} to bless it, creating a unique Boon Totem that combines all your Boons.<br><br>Survivors within the Boon's range:<ul><li>While healing without a Med-Kit, they heal others {Tunable.S28P02.HealingSpeedBonus%}% faster.</li><li>While injured, other Survivors see their Aura.</li></ul>",
+        "description": "While next to a Totem, use {Input.ActivatableButton1} to bless it, creating a unique Boon Totem that combines all your Boons.<br><br>Survivors within the Boon's range:<ul><li>While healing without a Med-Kit, they heal others {Tunable.S28P02.HealingSpeedBonus%}% faster.</li><li>While injured, other Survivors see their Aura.</li></ul>",
         "role": "survivor",
         "character": 27,
         "tunables": {
@@ -4399,7 +4399,7 @@
     "S29P03": {
         "categories": null,
         "name": "Boon: Exponential",
-        "description": "While next to a totem, use {Input.ActivatableButton1} to bless it, creating a unique Boon totem that combines all your Boons.<br><br>Downed Survivors within the Boon's range:<ul><li>Recover {Tunable.S29P03.RecoverSpeedBoost%}% faster.</li><li>Can fully recover.</li></ul>",
+        "description": "While next to a Totem, use {Input.ActivatableButton1} to bless it, creating a unique Boon Totem that combines all your Boons.<br><br>Downed Survivors within the Boon's range:<ul><li>Recover {Tunable.S29P03.RecoverSpeedBoost%}% faster.</li><li>Can fully recover.</li></ul>",
         "role": "survivor",
         "character": 28,
         "tunables": {
@@ -4447,7 +4447,7 @@
     "S30P03": {
         "categories": null,
         "name": "Boon: Dark Theory",
-        "description": "While next to a totem, use {Input.ActivatableButton1} to bless it, creating a unique Boon Totem that combines all your Boons.<br><br>Survivors within the Boon's range gain {Tunable.S30P03.Haste%}% {Keyword.Haste}. When leaving the range, this ends after {Tunable.S30P03.LingerDuration}s.",
+        "description": "While next to a Totem, use {Input.ActivatableButton1} to bless it, creating a unique Boon Totem that combines all your Boons.<br><br>Survivors within the Boon's range gain {Tunable.S30P03.Haste%}% {Keyword.Haste}. When leaving the range, this ends after {Tunable.S30P03.LingerDuration}s.",
         "role": "survivor",
         "character": 29,
         "tunables": {
@@ -4582,7 +4582,7 @@
     "S33P01": {
         "categories": null,
         "name": "Better Than New",
-        "description": "Whenever you finish healing another Survivor, until they take damage:<ul><li>They bless and cleanse {Tunable.S33P01.ActionSpeedBonus%}% faster.</li><li>They heal {Tunable.S33P01.ActionSpeedBonus%}% faster.</li><li>They unlock Chests {Tunable.S33P01.ActionSpeedBonus%}% faster.</li></ul>",
+        "description": "Whenever you finish healing another Survivor, until they take damage:<ul><li>They bless and cleanse Totems {Tunable.S33P01.ActionSpeedBonus%}% faster.</li><li>They heal {Tunable.S33P01.ActionSpeedBonus%}% faster.</li><li>They unlock Chests {Tunable.S33P01.ActionSpeedBonus%}% faster.</li></ul>",
         "role": "survivor",
         "character": 32,
         "tunables": {
@@ -4862,7 +4862,7 @@
             "safeguard"
         ],
         "name": "Made for This",
-        "description": "While injured, whenever you finish healing another Survivor, you gain {Keyword.Endurance} for {Tunable.S37P02.EnduranceDuration}s.<br><br>While you have {Keyword.DeepWound}, you gain {Tunable.S37P02.Haste%}% {Keyword.Haste}.",
+        "description": "While injured, whenever you finish healing another Survivor, you gain {Keyword.Endurance} for {Tunable.S37P02.EnduranceDuration}s.<br><br>While you are running and have {Keyword.DeepWound}, you gain {Tunable.S37P02.Haste%}% {Keyword.Haste}.",
         "role": "survivor",
         "character": 36,
         "tunables": {
@@ -5813,7 +5813,7 @@
     "S52P01": {
         "categories": null,
         "name": "Flow State",
-        "description": "Whenever a Generator is completed, earn {Tunable.S52P01.TokensPerGenerator} Token, up to {Tunable.S52P01.MaxTokens}.<br><br>For each Token:<ul><li>You bless and cleanse {Tunable.S52P01.ActionSpeedBuff%}% faster.</li><li>You heal {Tunable.S52P01.ActionSpeedBuff%}% faster.</li><li>You unhook Survivors {Tunable.S52P01.ActionSpeedBuff%}% faster.</li></ul>",
+        "description": "Whenever a Generator is completed, earn {Tunable.S52P01.TokensPerGenerator} Token, up to {Tunable.S52P01.MaxTokens}.<br><br>For each Token:<ul><li>You bless and cleanse Totems {Tunable.S52P01.ActionSpeedBuff%}% faster.</li><li>You heal {Tunable.S52P01.ActionSpeedBuff%}% faster.</li><li>You unhook Survivors {Tunable.S52P01.ActionSpeedBuff%}% faster.</li></ul>",
         "role": "survivor",
         "character": 51,
         "tunables": {
@@ -6563,7 +6563,7 @@
             "hinderance"
         ],
         "name": "Thanatophobia",
-        "description": "For each injured, downed, or hooked Survivor, all Survivors:<ul><li>Cleanse totems {Tunable.K04P02.ActionSpeedPenaltyPerSurvivor%}% slower.</li><li>Repair {Tunable.K04P02.ActionSpeedPenaltyPerSurvivor%}% slower.</li><li>Sabotage Hooks {Tunable.K04P02.ActionSpeedPenaltyPerSurvivor%}% slower.</li></ul><br><br>While 4 Survivors are either injured, downed or hooked, all above actions are additionally {Tunable.K04P02.ActionSpeedPenaltyBonus%}% slower.",
+        "description": "For each injured, downed, or hooked Survivor, all Survivors:<ul><li>Cleanse Totems {Tunable.K04P02.ActionSpeedPenaltyPerSurvivor%}% slower.</li><li>Repair {Tunable.K04P02.ActionSpeedPenaltyPerSurvivor%}% slower.</li><li>Sabotage Hooks {Tunable.K04P02.ActionSpeedPenaltyPerSurvivor%}% slower.</li></ul><br><br>While 4 Survivors are either injured, downed or hooked, all above actions are additionally {Tunable.K04P02.ActionSpeedPenaltyBonus%}% slower.",
         "role": "killer",
         "character": 268435459,
         "tunables": {
@@ -6762,7 +6762,7 @@
             "support"
         ],
         "name": "Vigil",
-        "description": "All Survivors within {Tunable.S11P03.EffectRange}m of you:<ul><li>Lose {Keyword.Blindness} {Tunable.S11P03.RecoveryIncrease%}% faster.</li><li>Lose {Keyword.Broken} {Tunable.S11P03.RecoveryIncrease%}% faster.</li><li>Lose {Keyword.Exhausted} {Tunable.S11P03.RecoveryIncrease%}% faster.</li><li>Lose {Keyword.Exposed} {Tunable.S11P03.RecoveryIncrease%}% faster.</li><li>Lose {Keyword.Hemorrhage} {Tunable.S11P03.RecoveryIncrease%}% faster.</li><li>Lose {Keyword.Hindered} {Tunable.S11P03.RecoveryIncrease%}% faster.</li><li>Lose {Keyword.Mangled} {Tunable.S11P03.RecoveryIncrease%}% faster.</li><li>Lose {Keyword.Oblivious} {Tunable.S11P03.RecoveryIncrease%}% faster.</li></ul><br><br>After they leave your range, this ends after {Tunable.S11P03.LingerDuration}s.",
+        "description": "All Survivors within {Tunable.S11P03.EffectRange}m of you lose {Keyword.Exhausted} {Tunable.S11P03.RecoveryIncrease%}% faster.<br><br>This effect ends {Tunable.S11P03.LingerDuration}s after they leave your range.",
         "role": "survivor",
         "character": 11,
         "tunables": {

@@ -835,7 +835,7 @@
             "tracking"
         ],
         "name": "Lien mortel",
-        "description": "D\u00e8s qu'un survivant finit de soigner un autre survivant, il hurle. Puis, tant qu'il ne subit pas de blessure, tant qu'il est dans un rayon de {Tunable.K20P03.MaximumDistance}\u00a0m\u00e8tres de ce survivant\u00a0:<ul><li>il subit {Keyword.Oblivious}.</li><li>il voit l'aura de ce survivant.</li></ul>",
+        "description": "D\u00e8s qu'un survivant finit de soigner un autre survivant, le soigneur hurle. Puis, jusqu'\u00e0 ce que le soigneur subisse des d\u00e9g\u00e2ts, tant qu'il est au moins \u00e0 {Tunable.K20P03.MaximumDistance}\u00a0m\u00e8tres du survivant soign\u00e9\u00a0:<li>le soigneur subit {Keyword.Oblivious}.</li><li>Il voit l'aura du survivant soign\u00e9.</li><br><br>Cet effet ne peut s\u2019appliquer qu'\u00e0 un seul survivant \u00e0 la fois.",
         "role": "killer",
         "character": 268435475,
         "tunables": {
@@ -1790,7 +1790,7 @@
             "tracking"
         ],
         "name": "Amasseur",
-        "description": "Lorsque l'\u00e9preuve commence, {Tunable.K22P01.ExtraChestsSpawned} coffres suppl\u00e9mentaires apparaissent.<br><br>D\u00e8s qu'un survivant ramasse un objet ou commence \u00e0 d\u00e9verrouiller un coffre dans un rayon de {Tunable.K22P01.RevealDistance}\u00a0m\u00e8tres autour de vous, vous recevez une alerte.",
+        "description": "Lorsque l'\u00e9preuve commence, {Tunable.K22P01.ExtraChestsSpawned}\u00a0coffres suppl\u00e9mentaires apparaissent.<br><br>D\u00e8s qu'un survivant ramasse un objet ou commence \u00e0 d\u00e9verrouiller un coffre dans un rayon de {Tunable.K22P01.RevealDistance}\u00a0m\u00e8tres autour de vous, vous recevez une alerte.",
         "role": "killer",
         "character": 268435477,
         "tunables": {
@@ -1862,7 +1862,7 @@
             "cruelty"
         ],
         "name": "Fascination",
-        "description": "Lorsque vous transportez un survivant, les survivants dans votre rayon de terreur se retrouvent {Keyword.Exposed}. Ceci se termine {Tunable.K23P01.ExposedLingerDuration}\u00a0secondes apr\u00e8s\u00a0:<ul><li>qu'ils ont quitt\u00e9 votre rayon de terreur.</li><li>que vous avez l\u00e2ch\u00e9 ou accroch\u00e9 le survivant transport\u00e9.</li></ul><br><br>Recharge\u00a0: {Tunable.K23P01.Cooldown}\u00a0secondes.",
+        "description": "Lorsque vous transportez un survivant, les survivants dans votre rayon de terreur se retrouvent {Keyword.Exposed}. Ceci se termine {Tunable.K23P01.ExposedLingerDuration}\u00a0secondes apr\u00e8s\u00a0:<ul><li>qu'ils ont quitt\u00e9 votre rayon de terreur\u00a0;</li><li>que vous avez l\u00e2ch\u00e9 ou accroch\u00e9 le survivant transport\u00e9.</li></ul><br><br>Recharge\u00a0: {Tunable.K23P01.Cooldown}\u00a0secondes.",
         "role": "killer",
         "character": 268435478,
         "tunables": {
@@ -1907,7 +1907,7 @@
             "obstruction"
         ],
         "name": "Aucune issue",
-        "description": "La premi\u00e8re fois que vous accrochez chaque survivant, vous gagnez {Tunable.K23P03.TokensPerUniqueHook}\u00a0jeton.<br><br>Lorsque tous les g\u00e9n\u00e9rateurs sont termin\u00e9s, quand un survivant commence \u00e0 ouvrir une porte de sortie\u00a0:<ul><li>l'interrupteur de la porte de sortie est bloqu\u00e9 pendant {Tunable.K23P03.GateBlockBaseDuration}\u00a0secondes, et avec {Tunable.K23P03.GateBlockDurationPerToken}\u00a0secondes suppl\u00e9mentaires pour chaque jeton.</li><li>vous recevez une alerte.</li></ul>",
+        "description": "La premi\u00e8re fois que vous accrochez chaque survivant, vous gagnez {Tunable.K23P03.TokensPerUniqueHook}\u00a0jeton.<br><br>Lorsque tous les g\u00e9n\u00e9rateurs sont termin\u00e9s, quand un survivant commence \u00e0 ouvrir une porte de sortie\u00a0:<ul><li>l'interrupteur de la porte de sortie est bloqu\u00e9 pendant {Tunable.K23P03.GateBlockBaseDuration}\u00a0secondes, et {Tunable.K23P03.GateBlockDurationPerToken}\u00a0secondes suppl\u00e9mentaires pour chaque jeton.</li><li>Vous recevez une alerte.</li></ul>",
         "role": "killer",
         "character": 268435478,
         "tunables": {
@@ -2589,7 +2589,7 @@
             "trickery"
         ],
         "name": "Amis pour la vie",
-        "description": "D\u00e8s que vous accrochez un survivant qui n'est pas l'obsession\u00a0:<ul><li>l'obsession se retrouve {Keyword.Exposed} pendant {Tunable.K34P02.ExposedDuration}\u00a0secondes.</li><li>vous voyez l'aura de l'obsession pendant {Tunable.K34P02.AuraRevealDuration}\u00a0secondes.</li></ul><br><br>D\u00e8s que vous accrochez l'obsession, un autre survivant\u00a0:<ul><li>hurle, et vous recevez une alerte.</li><li>devient l'obsession.</li></ul>",
+        "description": "D\u00e8s que vous accrochez un survivant qui n'est pas l'obsession\u00a0:<ul><li>l'obsession se retrouve {Keyword.Exposed} pendant {Tunable.K34P02.ExposedDuration}\u00a0secondes.</li><li>Vous voyez l'aura de l'obsession pendant {Tunable.K34P02.AuraRevealDuration}\u00a0secondes.</li></ul><br><br>D\u00e8s que vous accrochez l'obsession, un autre survivant\u00a0:<ul><li>hurle, et vous recevez une alerte.</li><li>Devient l'obsession.</li></ul>",
         "role": "killer",
         "character": 268435489,
         "tunables": {
@@ -4582,7 +4582,7 @@
     "S33P01": {
         "categories": null,
         "name": "Mieux que neuf",
-        "description": "D\u00e8s que vous finissez de soigner un autre survivant, tant qu'il ne se fait pas blesser\u00a0:<ul><li>il b\u00e9nit et purifie {Tunable.S33P01.ActionSpeedBonus%}\u00a0% plus vite.</li><li>il soigne {Tunable.S33P01.ActionSpeedBonus%}\u00a0% plus vite.</li><li>il d\u00e9verrouille les coffres {Tunable.S33P01.ActionSpeedBonus%}\u00a0% plus vite.</li></ul>",
+        "description": "D\u00e8s que vous finissez de soigner un autre survivant, tant qu'il ne se fait pas blesser\u00a0:<ul><li>il b\u00e9nit et purifie les totems {Tunable.S33P01.ActionSpeedBonus%}\u00a0% plus vite.</li><li>Il soigne {Tunable.S33P01.ActionSpeedBonus%}\u00a0% plus vite.</li><li>Il d\u00e9verrouille les coffres {Tunable.S33P01.ActionSpeedBonus%}\u00a0% plus vite.</li></ul>",
         "role": "survivor",
         "character": 32,
         "tunables": {
@@ -4862,7 +4862,7 @@
             "safeguard"
         ],
         "name": "Fait pour \u00e7a",
-        "description": "En \u00e9tat Bless\u00e9, d\u00e8s que vous finissez de soigner un autre survivant, vous gagnez {Keyword.Endurance} pendant {Tunable.S37P02.EnduranceDuration}\u00a0secondes.<br><br>Pendant que vous avez {Keyword.DeepWound}, vous b\u00e9n\u00e9ficiez de {Tunable.S37P02.Haste%}\u00a0% de {Keyword.Haste}.",
+        "description": "En \u00e9tat Bless\u00e9, d\u00e8s que vous finissez de soigner un autre survivant, vous gagnez {Keyword.Endurance} pendant {Tunable.S37P02.EnduranceDuration}\u00a0secondes.<br><br>Pendant que vous courez et que vous avez {Keyword.DeepWound}, vous b\u00e9n\u00e9ficiez de {Tunable.S37P02.Haste%}\u00a0% de {Keyword.Haste}.",
         "role": "survivor",
         "character": 36,
         "tunables": {
@@ -5813,7 +5813,7 @@
     "S52P01": {
         "categories": null,
         "name": "\u00c9tat de flux",
-        "description": "D\u00e8s qu'un g\u00e9n\u00e9rateur est termin\u00e9, vous gagnez {Tunable.S52P01.TokensPerGenerator} jeton, jusqu'\u00e0 {Tunable.S52P01.MaxTokens} au maximum.<br><br>Pour chaque jeton\u00a0:<ul><li>vous b\u00e9nissez et vous purifiez {Tunable.S52P01.ActionSpeedBuff%}\u00a0% plus vite.</li><li>vous soignez {Tunable.S52P01.ActionSpeedBuff%}\u00a0% plus vite.</li><li>vous d\u00e9crochez les survivants {Tunable.S52P01.ActionSpeedBuff%}\u00a0% plus vite.</li></ul>",
+        "description": "D\u00e8s qu'un g\u00e9n\u00e9rateur est termin\u00e9, vous gagnez {Tunable.S52P01.TokensPerGenerator}\u00a0jeton, jusqu'\u00e0 {Tunable.S52P01.MaxTokens} au maximum.<br><br>Pour chaque jeton\u00a0:<ul><li>vous b\u00e9nissez et vous purifiez les totems {Tunable.S52P01.ActionSpeedBuff%}\u00a0% plus vite.</li><li>Vous soignez {Tunable.S52P01.ActionSpeedBuff%}\u00a0% plus vite.</li><li>Vous d\u00e9crochez les survivants {Tunable.S52P01.ActionSpeedBuff%}\u00a0% plus vite.</li></ul>",
         "role": "survivor",
         "character": 51,
         "tunables": {
@@ -6762,7 +6762,7 @@
             "support"
         ],
         "name": "Veill\u00e9e",
-        "description": "Tous les survivants dans un rayon de {Tunable.S11P03.EffectRange}\u00a0m\u00e8tres de vous\u00a0:<ul><li>perdent {Keyword.Blindness} {Tunable.S11P03.RecoveryIncrease%}\u00a0% plus vite.</li><li>perdent {Keyword.Broken} {Tunable.S11P03.RecoveryIncrease%}\u00a0% plus vite.</li><li>perdent {Keyword.Exhausted} {Tunable.S11P03.RecoveryIncrease%}\u00a0% plus vite.</li><li>perdent {Keyword.Exposed} {Tunable.S11P03.RecoveryIncrease%}\u00a0% plus vite.</li><li>perdent {Keyword.Hemorrhage} {Tunable.S11P03.RecoveryIncrease%}\u00a0% plus vite.</li><li>perdent {Keyword.Hindered} {Tunable.S11P03.RecoveryIncrease%}\u00a0% plus vite.</li><li>perdent {Keyword.Mangled} {Tunable.S11P03.RecoveryIncrease%}\u00a0% plus vite.</li><li>perdent {Keyword.Oblivious} {Tunable.S11P03.RecoveryIncrease%}\u00a0% plus vite.</li></ul><br><br>Cet effet perdure {Tunable.S11P03.LingerDuration}\u00a0secondes pour ceux qui ne sont plus \u00e0 votre port\u00e9e.",
+        "description": "Tous les survivants se trouvant dans un rayon de {Tunable.S11P03.EffectRange}\u00a0m autour de vous perdent {Tunable.S11P03.RecoveryIncrease%}\u00a0% d'{Keyword.Exhausted} plus rapidement.<br><br>Cet effet prend fin au bout de {Tunable.S11P03.LingerDuration}\u00a0s apr\u00e8s avoir quitt\u00e9 votre rayon d\u2019action.",
         "role": "survivor",
         "character": 11,
         "tunables": {

@@ -2300,7 +2300,7 @@
         "character": 268435485,
         "tunables": {
             "aurarevealdistance": [
-                18
+                24
             ],
             "aurarevealduration": [
                 3,
@@ -4009,9 +4009,9 @@
                 15
             ],
             "repairtimeneeded": [
-                55,
-                50,
-                45
+                40,
+                35,
+                30
             ]
         },
         "teachable": 40,
@@ -6773,9 +6773,9 @@
                 15
             ],
             "recoveryincrease%": [
-                30,
-                35,
-                40
+                20,
+                25,
+                30
             ]
         },
         "teachable": 40,

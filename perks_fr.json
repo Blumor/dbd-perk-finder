@@ -79,8 +79,8 @@
         "character": 268435456,
         "tunables": {
             "haste%": [
-                6,
-                12,
+                14,
+                16,
                 18
             ],
             "terrorradiusincreasesize": [
@@ -195,6 +195,9 @@
         "role": "survivor",
         "character": 4,
         "tunables": {
+            "requiredfallheight": [
+                1.25
+            ],
             "exhaustionduration": [
                 60,
                 50,
@@ -211,9 +214,6 @@
             ],
             "hasteduration": [
                 3
-            ],
-            "requiredfallheight": [
-                1.25
             ]
         },
         "teachable": 30,
@@ -292,7 +292,7 @@
             "perception"
         ],
         "name": "Mieux ensemble",
-        "description": "Pendant que vous r\u00e9parez un g\u00e9n\u00e9rateur\u00a0:<ul><li>les autres survivants voient l'aura de ce g\u00e9n\u00e9rateur.</li><li>d\u00e8s que le tueur met un survivant \u00e0 terre, vous voyez l'aura de tous les survivants pendant {Tunable.S19P01.AuraRevealDuration}\u00a0secondes.</li></ul><br>",
+        "description": "Pendant que vous r\u00e9parez un g\u00e9n\u00e9rateur\u00a0:<li>les autres survivants voient l'aura de ce g\u00e9n\u00e9rateur.</li><li>d\u00e8s que le tueur met un survivant \u00e0 terre, vous voyez l'aura de tous les survivants pendant {Tunable.S19P01.AuraRevealDuration}\u00a0secondes.</li>",
         "role": "survivor",
         "character": 17,
         "tunables": {
@@ -315,15 +315,15 @@
         "character": null,
         "tunables": {
             "aurarevealduration": [
-                5
-            ],
-            "aurarevealendgameduration": [
-                5,
-                7,
                 10
             ],
+            "aurarevealendgameduration": [
+                16,
+                18,
+                20
+            ],
             "aurarevealrange": [
-                16
+                20
             ]
         },
         "teachable": 0,
@@ -371,7 +371,7 @@
             "support"
         ],
         "name": "Pacte de sang",
-        "description": "Lorsque vous n'\u00eates pas l'obsession\u00a0:<ul><li>lorsque vous ou l'obsession \u00eates en \u00e9tat Bless\u00e9, vous voyez vos auras respectives.</li><li>d\u00e8s que vous finissez de soigner l'obsession, ou que l'obsession finit de vous soigner, en \u00e9tant dans un rayon de {Tunable.S22P02.RequiredDistance}\u00a0m\u00e8tres l'un de l'autre, vous gagnez tous les deux {Tunable.S22P02.Haste%}\u00a0% de {Keyword.Haste}.</li></ul><br><br>Lorsque l'\u00e9preuve commence, vous \u00eates moins susceptible d'\u00eatre l'obsession.",
+        "description": "Lorsque vous n'\u00eates pas l'obsession\u00a0:<ul><li>lorsque vous ou l'obsession \u00eates en \u00e9tat Bless\u00e9, vous voyez vos auras respectives.</li><li>d\u00e8s que vous finissez de soigner l'obsession, ou que l'obsession finit de vous soigner, en \u00e9tant dans un rayon de {Tunable.S22P02.RequiredDistance}\u00a0m\u00e8tres l'un de l'autre, vous gagnez tous les deux {Tunable.S22P02.Haste%}\u00a0% de {Keyword.Haste}.</li></ul><br><br>Lorsque vous \u00eates l'obsession, si vous vous faites accrocher, un autre survivant devient l'obsession.<br><br>Lorsque l'\u00e9preuve commence, vous \u00eates moins susceptible d'\u00eatre l'obsession.",
         "role": "survivor",
         "character": 21,
         "tunables": {
@@ -425,9 +425,6 @@
                 60,
                 70,
                 80
-            ],
-            "requiredfallheight": [
-                1.25
             ]
         },
         "teachable": 40,
@@ -454,14 +451,14 @@
     "BoonDestroyer": {
         "categories": null,
         "name": "Espoir bris\u00e9",
-        "description": "D\u00e8s que vous \u00e9teignez un totem de b\u00e9n\u00e9diction\u00a0:<ul><li>vous voyez l'aura de tous les survivants dans son rayon pendant {Tunable.SG_Shattered_Hope.AuraRevealDuration}\u00a0secondes.</li><li>il est d\u00e9truit.</li></ul>",
+        "description": "D\u00e8s que vous \u00e9teignez un totem de b\u00e9n\u00e9diction, il est d\u00e9truit.<br><br>D\u00e8s qu'un totem est b\u00e9ni, purifi\u00e9 ou d\u00e9truit\u00a0:<ul><li>les totems passifs sont bloqu\u00e9s pendant {Tunable.KG_Shattered_Hope.EffectDuration}\u00a0s.</li><li>les totems ensorcel\u00e9s sont bloqu\u00e9s pendant\u00a0{Tunable.KG_Shattered_Hope.EffectDuration}\u00a0s.</li><li>vous voyez l'aura des totems de b\u00e9n\u00e9diction pendant {Tunable.KG_Shattered_Hope.EffectDuration}\u00a0s.</li></ul>",
         "role": "killer",
         "character": null,
         "tunables": {
-            "aurarevealduration": [
-                6,
-                7,
-                8
+            "effectduration": [
+                16,
+                18,
+                20
             ]
         },
         "teachable": 0,
@@ -472,15 +469,10 @@
             "safeguard"
         ],
         "name": "Sursis",
-        "description": "D\u00e8s que vous d\u00e9crochez un survivant\u00a0:<ul><li>il conserve son {Keyword.Endurance} suite au d\u00e9crochage pendant {Tunable.S08P02.EnduranceExtraDuration}\u00a0secondes suppl\u00e9mentaires.</li><li>il conserve sa {Keyword.Haste} suite au d\u00e9crochage pendant {Tunable.S08P02.HasteExtraDuration}\u00a0secondes suppl\u00e9mentaires.</li></ul>",
+        "description": "D\u00e8s que vous d\u00e9crochez un survivant\u00a0:<ul><li>il conserve son {Keyword.Endurance} suite au d\u00e9crochage pendant {Tunable.S08P02.EnduranceExtraDuration}\u00a0s suppl\u00e9mentaires.</li><li>il conserve sa {Keyword.Haste} suite au d\u00e9crochage pendant {Tunable.S08P02.HasteExtraDuration}\u00a0s suppl\u00e9mentaires.</li></ul>",
         "role": "survivor",
         "character": 7,
         "tunables": {
-            "elusiveextraduration": [
-                8,
-                12,
-                16
-            ],
             "enduranceextraduration": [
                 6,
                 8,
@@ -488,11 +480,6 @@
             ],
             "hasteextraduration": [
                 10
-            ],
-            "nocollisionextraduration": [
-                8,
-                12,
-                16
             ]
         },
         "teachable": 35,
@@ -629,14 +616,14 @@
             "concealment"
         ],
         "name": "Esprit calme",
-        "description": "Vous n'effrayez pas les corbeaux et vous ne criez pas.<br><br>Vous d\u00e9verrouillez les coffres et vous b\u00e9nissez et purifiez les totems en silence, mais vous le faites {Tunable.S04P02.ActionSpeedReduction%}\u00a0% plus lentement.",
+        "description": "Vous n'effrayez pas les corbeaux et vous ne criez pas.<br><br>Vous d\u00e9verrouillez les coffres, b\u00e9nissez et purifiez les totems en silence, et vous le faites {Tunable.S04P02.ActionSpeedReduction%}\u00a0% plus vite.",
         "role": "survivor",
         "character": 3,
         "tunables": {
             "actionspeedreduction%": [
-                40,
-                35,
-                30
+                8,
+                9,
+                10
             ]
         },
         "teachable": 35,
@@ -749,17 +736,20 @@
             "perception"
         ],
         "name": "Sentiment obscur",
-        "description": "D\u00e8s qu'un g\u00e9n\u00e9rateur est compl\u00e9t\u00e9, lorsque le tueur est dans un rayon de {Tunable.SG_Dark_Sense.AuraRevealDistance}\u00a0m\u00e8tres autour de vous, vous voyez son aura pendant {Tunable.SG_Dark_Sense.AuraRevealDuration}\u00a0secondes.",
+        "description": "D\u00e8s qu'un g\u00e9n\u00e9rateur est compl\u00e9t\u00e9, lorsque le tueur entre dans un rayon de {Tunable.SG_Dark_Sense.KillerRange}\u00a0m\u00e8tres de vous, pendant {Tunable.SG_Dark_Sense.EffectDuration}\u00a0s\u00a0:<ul><li>vous voyez l'aura des palettes et des points de saut dans un rayon de {Tunable.SG_Dark_Sense.AuraRange}\u00a0m\u00e8tres.</li><li>vous voyez l'aura des autres survivants.</li><li>vous voyez l'aura du tueur.</li></ul>",
         "role": "survivor",
         "character": null,
         "tunables": {
-            "aurarevealdistance": [
-                24
+            "killerrange": [
+                20
             ],
-            "aurarevealduration": [
-                5,
-                7,
-                10
+            "effectduration": [
+                13,
+                14,
+                15
+            ],
+            "aurarange": [
+                32
             ]
         },
         "teachable": 0,
@@ -816,14 +806,22 @@
             "obstruction"
         ],
         "name": "Dispositif de l\u2019homme mort",
-        "description": "D\u00e8s que vous accrochez un survivant, la premi\u00e8re fois qu'un survivant cesse de r\u00e9parer un g\u00e9n\u00e9rateur, ce g\u00e9n\u00e9rateur est bloqu\u00e9 pendant {Tunable.K19P02.GeneratorBlockDuration}\u00a0secondes. Recharge\u00a0: {Tunable.K19P02.GeneratorBlockDuration}\u00a0secondes.",
+        "description": "D\u00e8s que vous accrochez un survivant, la prochaine fois qu'un survivant cesse de r\u00e9parer un g\u00e9n\u00e9rateur pendant plus de {Tunable.K19P02.GeneratorReleaseDuration}\u00a0s, ce g\u00e9n\u00e9rateur est bloqu\u00e9 pendant {Tunable.K19P02.GeneratorBlockDuration}\u00a0s. Recharge\u00a0: {Tunable.K19P02.Cooldown}\u00a0s.",
         "role": "killer",
         "character": 268435474,
         "tunables": {
             "generatorblockduration": [
-                25,
                 30,
-                35
+                35,
+                40
+            ],
+            "generatorreleaseduration": [
+                2
+            ],
+            "cooldown": [
+                30,
+                35,
+                40
             ]
         },
         "teachable": 35,
@@ -885,7 +883,7 @@
         "character": null,
         "tunables": {
             "revealduration": [
-                3
+                4
             ],
             "revealtimeintervals": [
                 40,
@@ -1033,13 +1031,16 @@
             "trickery"
         ],
         "name": "Inqui\u00e9tant",
-        "description": "Votre rayon de terreur est {Tunable.KG_Distressing.TerrorRadiusIncreaseSize%}\u00a0% plus grand.",
+        "description": "Les survivants dans votre rayon de terreur r\u00e9parent {Tunable.KG_Distressing.RepairSpeedPenalty}\u00a0% plus lentement.<br><br>Votre rayon de terreur est {Tunable.KG_Distressing.TerrorRadiusIncreaseSize}\u00a0% plus grand.",
         "role": "killer",
         "character": null,
         "tunables": {
-            "terrorradiusincreasesize%": [
-                20,
-                25,
+            "repairspeedpenalty": [
+                6,
+                7,
+                8
+            ],
+            "terrorradiusincreasesize": [
                 30
             ]
         },
@@ -1164,9 +1165,9 @@
         "character": 268435465,
         "tunables": {
             "actionspeedbonus%": [
-                4,
-                5,
-                6
+                6,
+                7,
+                8
             ],
             "maxtokens": [
                 5
@@ -1520,7 +1521,7 @@
             "obstruction"
         ],
         "name": "Sort\u00a0: Euphorie de la chasse",
-        "description": "Lorsque l'\u00e9preuve commence, un totem passif s'embrase.<br><br>Pour chaque totem passif et ensorcel\u00e9 encore debout, vous avez {Tunable.KG_Hex_Thrill_Of_The_Hunt.TokensPerTotem}\u00a0jeton.<br><br>Pour chaque jeton, les survivants b\u00e9nissent et purifient les totems {Tunable.KG_Hex_Thrill_Of_The_Hunt.ActionSpeedReductionPerToken%}\u00a0% plus lentement.",
+        "description": "La premi\u00e8re fois que vous accrochez un survivant, un totem passif s\u2019embrase.<br><br><br>Lorsque vous accrochez un survivant, vous bloquez tous les totems ensorcel\u00e9s pendant {Tunable.KG_Hex_Thrill_Of_The_Hunt.BlockDurationPerToken}\u00a0s pour chaque totem ensorcel\u00e9 allum\u00e9.",
         "role": "killer",
         "character": null,
         "tunables": {
@@ -1531,6 +1532,11 @@
             ],
             "tokenspertotem": [
                 1
+            ],
+            "blockdurationpertoken": [
+                4,
+                5,
+                6
             ]
         },
         "teachable": 0,
@@ -1541,16 +1547,16 @@
             "chasing"
         ],
         "name": "Sort\u00a0: Faveur de sang",
-        "description": "Lorsque l'\u00e9preuve commence, un totem passif s'embrase.<br><br>D\u00e8s que vous blessez un survivant, toutes les palettes debout dans un rayon de {Tunable.K21P03.EffectRadius}\u00a0m\u00e8tres autour de lui sont bloqu\u00e9es pendant {Tunable.K21P03.BlockDuration}\u00a0secondes.",
+        "description": "Lorsque l'\u00e9preuve commence, un totem passif s'embrase.<br><br>D\u00e8s qu'un survivant en bonne sant\u00e9 est bless\u00e9 par votre attaque de base, toutes les palettes debout dans un rayon de {Tunable.K21P03.EffectRadius}\u00a0m\u00e8tres autour de lui sont bloqu\u00e9es pendant {Tunable.K21P03.BlockDuration}\u00a0s.",
         "role": "killer",
         "character": 268435476,
         "tunables": {
             "blockduration": [
+                13,
+                14,
                 15
             ],
             "effectradius": [
-                24,
-                28,
                 32
             ]
         },
@@ -1681,14 +1687,17 @@
             "trickery"
         ],
         "name": "Insidieux",
-        "description": "Lorsque vous restez immobile pendant {Tunable.KG_Insidious.TimeToActivate}\u00a0seconde, vous gagnez {Keyword.Undetectable} jusqu'\u00e0 ce que vous agissiez.",
+        "description": "Lorsque vous restez immobile pendant {Tunable.KG_Insidious.TimeToActivate}\u00a0s, vous gagnez {Keyword.Undetectable}. D\u00e8s que vous agissez, ceci prend fin au bout de {Tunable.KG_Insidious.LingerTime}\u00a0s.",
         "role": "killer",
         "character": null,
         "tunables": {
             "timetoactivate": [
-                3,
-                2,
-                1
+                2
+            ],
+            "lingertime": [
+                6,
+                7,
+                8
             ]
         },
         "teachable": 0,
@@ -1699,20 +1708,20 @@
             "trickery"
         ],
         "name": "K.O.",
-        "description": "D\u00e8s qu'un survivant renverse une palette, pendant les {Tunable.K09P01.TriggerTime}\u00a0secondes qui suivent, s'il s'\u00e9loigne \u00e0 plus de {Tunable.K09P01.DistanceThreshold}\u00a0m\u00e8tres de cette palette, il subit {Tunable.K09P01.Hindered%}\u00a0% d'{Keyword.Hindered} pendant {Tunable.K09P01.HinderedDuration}\u00a0secondes.",
+        "description": "D\u00e8s qu'un survivant renverse une palette, pendant les {Tunable.K09P01.TriggerTime}\u00a0s qui suivent, s'il s'\u00e9loigne \u00e0 plus de {Tunable.K09P01.DistanceThreshold}\u00a0m\u00e8tres de cette palette, il subit {Tunable.K09P01.Hindered%}\u00a0% d'{Keyword.Hindered} pendant {Tunable.K09P01.HinderedDuration}\u00a0s.<br><br><br>Ceci prend fin plus t\u00f4t si la palette est d\u00e9truite.",
         "role": "killer",
         "character": 268435464,
         "tunables": {
             "distancethreshold": [
-                6
+                10
             ],
             "hindered%": [
-                5
+                20
             ],
             "hinderedduration": [
+                2,
                 3,
-                4,
-                5
+                4
             ],
             "triggertime": [
                 6
@@ -1734,8 +1743,8 @@
                 75
             ],
             "wiggletimeincrease%": [
-                4,
-                8,
+                10,
+                11,
                 12
             ]
         },
@@ -2184,14 +2193,14 @@
     "K28P01": {
         "categories": null,
         "name": "Dissolution",
-        "description": "{Tunable.K28P01.TimeBeforeTrigger}\u00a0secondes apr\u00e8s qu'un survivant subit une blessure, pendant les {Tunable.K28P01.EffectDuration}\u00a0secondes qui suivent, la prochaine fois qu'un survivant franchit une palette en courant avec \u00e9lan dans votre rayon de terreur, la palette est d\u00e9truite.",
+        "description": "{Tunable.K28P01.TimeBeforeTrigger}\u00a0s apr\u00e8s qu'un survivant subit une blessure d'une attaque de base, pendant les {Tunable.K28P01.EffectDuration}\u00a0s qui suivent, la prochaine fois qu'un survivant franchit une palette en courant avec \u00e9lan dans votre rayon de terreur, la palette est d\u00e9truite.",
         "role": "killer",
         "character": 268435483,
         "tunables": {
             "effectduration": [
-                12,
-                16,
-                20
+                13,
+                14,
+                15
             ],
             "timebeforetrigger": [
                 3
@@ -2241,12 +2250,12 @@
     "K29P01": {
         "categories": null,
         "name": "Anatomie sup\u00e9rieure",
-        "description": "D\u00e8s qu'un survivant fait un saut en courant dans un rayon de {Tunable.K29P01.SurvivorVaultDistance}\u00a0m\u00e8tres autour de vous, la prochaine fois que vous franchissez un point de saut (action normale), vous le franchirez {Tunable.K29P01.VaultSpeed%}\u00a0% plus vite. Recharge\u00a0: {Tunable.K29P01.Cooldown}\u00a0secondes.",
+        "description": "D\u00e8s qu'un survivant saute en courant avec \u00e9lan dans un rayon de {Tunable.K29P01.SurvivorVaultDistance}\u00a0m\u00e8tres de vous, la prochaine fois que vous franchissez un point de saut (action normale), pendant {Tunable.K29P01.VaultSpeedDuration}\u00a0s, vous le franchirez {Tunable.K29P01.VaultSpeed%}\u00a0% plus vite. Recharge\u00a0: {Tunable.K29P01.Cooldown}\u00a0s.",
         "role": "killer",
         "character": 268435484,
         "tunables": {
             "cooldown": [
-                25
+                20
             ],
             "survivorvaultdistance": [
                 12
@@ -2255,6 +2264,9 @@
                 30,
                 35,
                 40
+            ],
+            "vaultspeedduration": [
+                10
             ]
         },
         "teachable": 30,
@@ -2363,7 +2375,7 @@
         "character": 268435486,
         "tunables": {
             "haste%": [
-                7
+                10
             ],
             "hasteduration": [
                 8,
@@ -2481,7 +2493,7 @@
             "chasing"
         ],
         "name": "Apprentissage automatique",
-        "description": "Lorsque vous endommagez un g\u00e9n\u00e9rateur, il devient compromis.<br><br>Lorsque ce g\u00e9n\u00e9rateur est termin\u00e9 par des survivants\u00a0:<ul><li>vous gagnez {Tunable.K32P03.Haste%}\u00a0% de {Keyword.Haste} pendant {Tunable.K32P03.PerkDuration}\u00a0secondes.</li><li>vous gagnez {Keyword.Undetectable} pendant {Tunable.K32P03.PerkDuration}\u00a0secondes.</li></ul><br><br>Il ne peut y avoir qu'un seul g\u00e9n\u00e9rateur compromis \u00e0 la fois.",
+        "description": "Lorsque vous endommagez un g\u00e9n\u00e9rateur, il devient compromis.<br><br>Lorsque n'importe quel g\u00e9n\u00e9rateur compromis est termin\u00e9 par des survivants\u00a0:<ul><li>vous gagnez {Tunable.K32P03.Haste%}\u00a0% de {Keyword.Haste} pendant {Tunable.K32P03.PerkDuration}\u00a0s.</li><li>vous gagnez {Keyword.Undetectable} pendant {Tunable.K32P03.PerkDuration}\u00a0s.</li><li>Les autres g\u00e9n\u00e9rateurs cessent d\u2019\u00eatre compromis.</li></ul><br><br>Jusqu'\u00e0 {Tunable.K32P03.GeneratorsCompromised}\u00a0g\u00e9n\u00e9rateurs peuvent \u00eatre compromis \u00e0 la fois.",
         "role": "killer",
         "character": 268435487,
         "tunables": {
@@ -2492,6 +2504,9 @@
             ],
             "haste%": [
                 8
+            ],
+            "generatorscompromised": [
+                3
             ]
         },
         "teachable": 40,
@@ -2589,7 +2604,7 @@
             "trickery"
         ],
         "name": "Amis pour la vie",
-        "description": "D\u00e8s que vous accrochez un survivant qui n'est pas l'obsession\u00a0:<ul><li>l'obsession se retrouve {Keyword.Exposed} pendant {Tunable.K34P02.ExposedDuration}\u00a0secondes.</li><li>Vous voyez l'aura de l'obsession pendant {Tunable.K34P02.AuraRevealDuration}\u00a0secondes.</li></ul><br><br>D\u00e8s que vous accrochez l'obsession, un autre survivant\u00a0:<ul><li>hurle, et vous recevez une alerte.</li><li>Devient l'obsession.</li></ul>",
+        "description": "D\u00e8s que vous accrochez un survivant qui n'est pas l'obsession\u00a0:<ul><li>l'obsession se retrouve {Keyword.Exposed} pendant {Tunable.K34P02.ExposedDuration}\u00a0secondes.</li><li>vous voyez l'aura de l'obsession pendant {Tunable.K34P02.AuraRevealDuration}\u00a0secondes.</li></ul><br><br>D\u00e8s que vous accrochez l'obsession, un autre survivant\u00a0:<ul><li>hurle, et vous recevez une alerte.</li><li>devient l'obsession.</li></ul>",
         "role": "killer",
         "character": 268435489,
         "tunables": {
@@ -2640,15 +2655,15 @@
         "character": 268435490,
         "tunables": {
             "effectduration": [
-                24,
-                27,
+                26,
+                28,
                 30
             ],
             "haste%": [
-                7
+                5
             ],
             "hasteduration": [
-                10
+                25
             ]
         },
         "teachable": 30,
@@ -2679,26 +2694,28 @@
     "K35P03": {
         "categories": null,
         "name": "Interrompu",
-        "description": "D\u00e8s qu'un survivant rate un test d'habilet\u00e9 standard, vous gagnez {Tunable.K35P03.TokenGain}\u00a0jetons, jusqu'\u00e0 {Tunable.K35P03.MaxTokens} au maximum.<br><br>D\u00e8s que vous endommagez un g\u00e9n\u00e9rateur, vous d\u00e9pensez tous les jetons. Pour chaque jeton d\u00e9pens\u00e9\u00a0:<ul><li>le g\u00e9n\u00e9rateur perd {Tunable.K35P03.GeneratorRegressionPerToken%}\u00a0% de progression.</li><li>le g\u00e9n\u00e9rateur est bloqu\u00e9 pendant {Tunable.K35P03.BlockTimePerToken}\u00a0seconde.</li></ul><br><br>Lorsque ce g\u00e9n\u00e9rateur est d\u00e9bloqu\u00e9, il se met \u00e0 r\u00e9gresser. Recharge\u00a0: {Tunable.K35P03.Cooldown}\u00a0secondes.",
+        "description": "D\u00e8s que vous accrochez un survivant, vous gagnez {Tunable.K35P03.TokenGain}\u00a0jeton (maximum\u00a0: {Tunable.K35P03.MaxTokens}).<br><br>D\u00e8s que vous endommagez un g\u00e9n\u00e9rateur, vous d\u00e9pensez tous les jetons. Pour chaque jeton d\u00e9pens\u00e9\u00a0:<ul><li>le g\u00e9n\u00e9rateur perd {Tunable.K35P03.GeneratorRegressionPerToken%}\u00a0% de progression en plus.</li><li>Le g\u00e9n\u00e9rateur est bloqu\u00e9 pendant {Tunable.K35P03.BlockTimePerToken}\u00a0s.</li></ul>",
         "role": "killer",
         "character": 268435490,
         "tunables": {
             "blocktimepertoken": [
-                1
+                8,
+                9,
+                10
             ],
             "cooldown": [
                 60
             ],
             "generatorregressionpertoken%": [
-                1
+                8,
+                9,
+                10
             ],
             "maxtokens": [
-                18,
-                24,
-                30
+                3
             ],
             "tokengain": [
-                3
+                1
             ]
         },
         "teachable": 40,
@@ -2748,14 +2765,19 @@
     "K36P03": {
         "categories": null,
         "name": "Arrogance t\u00e9n\u00e9breuse",
-        "description": "Vous franchissez les points de saut (action normale) {Tunable.K36P03.VaultSpeedIncrease%}\u00a0% plus rapide.<br><br>Si vous vous faites aveugler ou \u00e9tourdir par une palette, la dur\u00e9e est prolong\u00e9e de {Tunable.K36P03.ExtraBlindStunDuration%}\u00a0%.",
+        "description": "Vous franchissez les points de saut (action normale) {Tunable.K36P03.VaultSpeedIncrease%}\u00a0% plus vite.<br><br>La recharge de votre attaque de base rat\u00e9e est {Tunable.K36P03.AttackCooldownReduction%}\u00a0% plus courte.<br><br>Si vous vous faites aveugler ou \u00e9tourdir par une palette, la dur\u00e9e est prolong\u00e9e de {Tunable.K36P03.ExtraBlindStunDuration%}\u00a0%.",
         "role": "killer",
         "character": 268435491,
         "tunables": {
             "extrablindstunduration%": [
-                15
+                25
             ],
             "vaultspeedincrease%": [
+                15,
+                20,
+                25
+            ],
+            "attackcooldownreduction%": [
                 15,
                 20,
                 25
@@ -2808,14 +2830,17 @@
     "K37P03": {
         "categories": null,
         "name": "Domination",
-        "description": "La premi\u00e8re fois que chaque coffre commence \u00e0 \u00eatre d\u00e9verrouill\u00e9 et que chaque totem commence \u00e0 \u00eatre b\u00e9ni ou purifi\u00e9 par un survivant, il est bloqu\u00e9 pendant {Tunable.K37P03.BlockDuration}\u00a0secondes.",
+        "description": "La premi\u00e8re fois que chaque totem commence \u00e0 \u00eatre b\u00e9ni ou purifi\u00e9 par un survivant\u00a0:<li>il est bloqu\u00e9 pendant {Tunable.K37P03.BlockDuration}\u00a0s.</li><li>le survivant hurle.</li><li>vous voyez son aura pendant {Tunable.K37P03.AuraDuration}\u00a0s.</li>",
         "role": "killer",
         "character": 268435492,
         "tunables": {
             "blockduration": [
-                8,
-                12,
-                16
+                25
+            ],
+            "auraduration": [
+                3,
+                4,
+                5
             ]
         },
         "teachable": 40,
@@ -2884,17 +2909,25 @@
     "K39P01": {
         "categories": null,
         "name": "Sort\u00a0: Que du malheur",
-        "description": "Lorsque vous blessez des survivants avec une attaque de base {Tunable.K39P01.BasicHitsRequired}\u00a0fois, un totem passif s'embrase.<br><br>D\u00e8s que vous blessez un survivant avec une attaque de base, il subit {Tunable.K39P01.Hindered%}\u00a0% d'{Keyword.Hindered} pendant {Tunable.K39P01.HinderedDuration}\u00a0secondes.",
+        "description": "Apr\u00e8s avoir bless\u00e9 des survivants avec une attaque de base {Tunable.K39P01.BasicHitsRequired}\u00a0fois, un totem passif s\u2019embrase.<br><br>Chaque fois que vous blessez un survivant avec une attaque de base :<ul><li>il subit {Tunable.K39P01.Hindered%}\u00a0% d'{Keyword.Hindered} pendant {Tunable.K39P01.HinderedDuration}\u00a0s.</li><li>Il franchit les fen\u00eatres {Tunable.K39P01.Vault%}\u00a0% plus lentement pendant {Tunable.K39P01.VaultDuration} s.</li></ul>",
         "role": "killer",
         "character": 268435494,
         "tunables": {
             "basichitsrequired": [
-                8
+                4
             ],
             "hindered%": [
                 5
             ],
             "hinderedduration": [
+                10,
+                12.5,
+                15
+            ],
+            "vault%": [
+                10
+            ],
+            "vaultduration": [
                 10,
                 12.5,
                 15
@@ -2950,7 +2983,7 @@
     "K40P01": {
         "categories": null,
         "name": "On embauche",
-        "description": "D\u00e8s que vous endommagez un g\u00e9n\u00e9rateur, il devient compromis.<br><br>Lorsque ce g\u00e9n\u00e9rateur est termin\u00e9 par des survivants, vos recharges d'attaques de base sont {Tunable.K40P01.AttackCooldownReduction%}\u00a0% plus courtes pendant {Tunable.K40P01.Duration}\u00a0secondes.<br><br>Il ne peut y avoir qu'un seul g\u00e9n\u00e9rateur compromis \u00e0 la fois.",
+        "description": "D\u00e8s que vous endommagez un g\u00e9n\u00e9rateur, il devient compromis.<br><br>Lorsqu'un g\u00e9n\u00e9rateur compromis est termin\u00e9 par des survivants\u00a0:<li>vos recharges d'attaques de base sont {Tunable.K40P01.AttackCooldownReduction%}\u00a0% plus courtes pendant {Tunable.K40P01.Duration}\u00a0s.</li><li>les g\u00e9n\u00e9rateurs qui ne sont pas en cours de r\u00e9paration r\u00e9gressent \u00e0 une vitesse de {Tunable.K40P01.RegressionSpeed%}\u00a0% pendant {Tunable.K40P01.Duration}\u00a0s.</li><li>les autres g\u00e9n\u00e9rateurs cessent d\u2019\u00eatre compromis.</li><br><br>Jusqu'\u00e0 {Tunable.K40P01.GeneratorsCompromised}\u00a0g\u00e9n\u00e9rateurs peuvent \u00eatre compromis \u00e0 la fois.",
         "role": "killer",
         "character": 268435495,
         "tunables": {
@@ -2958,9 +2991,15 @@
                 25
             ],
             "duration": [
-                40,
-                50,
-                60
+                70,
+                80,
+                90
+            ],
+            "regressionspeed%": [
+                150
+            ],
+            "generatorscompromised": [
+                3
             ]
         },
         "teachable": 30,
@@ -3010,7 +3049,7 @@
     "K41P01": {
         "categories": null,
         "name": "Vorace",
-        "description": "La premi\u00e8re fois que vous accrochez chaque survivant, vous gagnez {Tunable.K41P01.TokensPerUniqueHook}\u00a0jeton.<br><br>Lorsque vous avez {Tunable.K41P01.MaxTokens}\u00a0jetons, tous les survivants\u00a0:<ul><li>hurlent.</li><li>se retrouvent {Keyword.Exposed} pendant {Tunable.K41P01.ExposedDuration}\u00a0secondes.</li></ul>",
+        "description": "La premi\u00e8re fois que vous accrochez chaque survivant, vous gagnez {Tunable.K41P01.TokensPerUniqueHook}\u00a0jeton. Pour chaque jeton\u00a0:<li>vous gagnez {Tunable.K41P01.CarryHaste%PerToken}\u00a0% de {Keyword.Haste} pendant que vous transportez un survivant.</li><li>vous accrochez les survivants {Tunable.K41P01.HookFaster%PerToken}\u00a0% plus vite.</li><br><br>Lorsque vous avez {Tunable.K41P01.MaxTokens}\u00a0jetons, tous les survivants\u00a0:<li>hurlent.</li><li>se retrouvent {Keyword.Exposed} pendant {Tunable.K41P01.ExposedDuration}\u00a0s.</li>",
         "role": "killer",
         "character": 268435496,
         "tunables": {
@@ -3021,9 +3060,15 @@
                 4
             ],
             "exposedduration": [
-                40,
-                50,
-                60
+                80,
+                85,
+                90
+            ],
+            "carryhaste%pertoken": [
+                4
+            ],
+            "hookfaster%pertoken": [
+                4
             ]
         },
         "teachable": 30,
@@ -3141,8 +3186,6 @@
                 3
             ],
             "distancetosurvivors": [
-                11,
-                12,
                 13
             ],
             "hinderedvalue": [
@@ -3271,8 +3314,8 @@
         "character": null,
         "tunables": {
             "aurarevealdistance": [
-                8,
-                12,
+                14,
+                15,
                 16
             ]
         },
@@ -3504,14 +3547,14 @@
             "hinderance"
         ],
         "name": "Crochet flagellateur\u00a0: Sanctuaire monstrueux",
-        "description": "Lorsque l'\u00e9preuve commence\u00a0:<ul><li>4 crochets al\u00e9atoires deviennent des crochets flagellateurs.</li><li>les crochets de la cave deviennent des crochets flagellateurs.</li></ul><br><br>Lorsque vous \u00eates au moins \u00e0 {Tunable.KG_Monstrous_Shrine.Range}\u00a0m\u00e8tres de distance d'un survivant accroch\u00e9 \u00e0 un crochet flagellateur, celui-ci est sacrifi\u00e9 {Tunable.KG_Monstrous_Shrine.FasterProgress%}\u00a0% plus vite.",
+        "description": "Lorsque l'\u00e9preuve commence\u00a0:<ul><li>4 crochets al\u00e9atoires deviennent des crochets flagellateurs.</li><li>les crochets de la cave deviennent des crochets flagellateurs.</li></ul><br><br><br>Lorsque vous \u00eates au moins \u00e0 {Tunable.KG_Monstrous_Shrine.Range}\u00a0m\u00e8tres de distance d'un survivant accroch\u00e9 \u00e0 un crochet flagellateur, tout g\u00e9n\u00e9rateur qui n'est pas en train d'\u00eatre r\u00e9par\u00e9 r\u00e9gresse \u00e0 une vitesse de {Tunable.KG_Monstrous_Shrine.GeneratorRegression}\u00a0%.",
         "role": "killer",
         "character": null,
         "tunables": {
-            "fasterprogress%": [
-                10,
-                15,
-                20
+            "generatorregression": [
+                150,
+                175,
+                200
             ],
             "range": [
                 24
@@ -3580,8 +3623,13 @@
         "character": null,
         "tunables": {
             "actionspeed%": [
-                50,
-                75,
+                80,
+                90,
+                100
+            ],
+            "unhookspeed%": [
+                80,
+                90,
                 100
             ],
             "increasedhaste%": [
@@ -3639,17 +3687,17 @@
             "perception"
         ],
         "name": "Objet d'obsession",
-        "description": "Tant que vous \u00eates l'obsession, toutes les {Tunable.S06P03.RevealTimeIntervals}\u00a0secondes, le tueur voit votre aura pendant {Tunable.S06P03.AuraRevealDuration}\u00a0secondes.<br><br>Tant que le tueur voit votre aura\u00a0:<ul><li>vous voyez son aura.</li><li>vous purifiez les totems {Tunable.S06P03.ActionSpeedBonus%}\u00a0% plus vite.</li><li>vous soignez {Tunable.S06P03.ActionSpeedBonus%}\u00a0% plus vite.</li><li>vous r\u00e9parez {Tunable.S06P03.ActionSpeedBonus%}\u00a0% plus vite.</li></ul><br><br>Lorsque l'\u00e9preuve commence, vous avez une probabilit\u00e9 plus \u00e9lev\u00e9e d'\u00eatre l'obsession.",
+        "description": "Tant que vous \u00eates l'obsession, toutes les {Tunable.S06P03.RevealTimeIntervals}\u00a0s, le tueur voit votre aura pendant {Tunable.S06P03.AuraRevealDuration}\u00a0s.<br><br>Tant que le tueur voit votre aura\u00a0:<ul><li>vous voyez son aura.</li><li>vous b\u00e9nissez et purifiez les totems {Tunable.S06P03.ActionSpeedBonus%}\u00a0% plus vite.</li><li>vous soignez {Tunable.S06P03.ActionSpeedBonus%}\u00a0% plus vite.</li><li>vous r\u00e9parez {Tunable.S06P03.ActionSpeedBonus%}\u00a0% plus vite.</li></ul><br><br>Lorsque l'\u00e9preuve commence, vous avez une probabilit\u00e9 plus \u00e9lev\u00e9e d'\u00eatre l'obsession.",
         "role": "survivor",
         "character": 5,
         "tunables": {
             "actionspeedbonus%": [
-                2,
-                4,
-                6
+                8,
+                9,
+                10
             ],
             "aurarevealduration": [
-                3
+                4
             ],
             "revealtimeintervals": [
                 30
@@ -3730,7 +3778,7 @@
             "adaptation"
         ],
         "name": "Pharmacie",
-        "description": "D\u00e8s que vous d\u00e9verrouillerez un coffre, il contiendra une trousse de soins rare.<br><br>Vous d\u00e9verrouillez les coffres {Tunable.S11P02.SearchSpeeds%}\u00a0% plus vite.<br><br>La distance \u00e0 laquelle vos bruits de d\u00e9verrouillage des coffres sont audibles est r\u00e9duite de {Tunable.S11P02.NoiseReductionDistance}\u00a0m\u00e8tres.",
+        "description": "D\u00e8s que vous d\u00e9verrouillerez un coffre, il contiendra une trousse de soins rare.<br><br>Vous d\u00e9verrouillez et fouillez les coffres {Tunable.S11P02.SearchSpeeds%}\u00a0% plus vite.<br><br>Vous pouvez fouiller chaque coffre 1\u00a0fois.<br><br><br>La distance \u00e0 laquelle vos bruits de d\u00e9verrouillage des coffres sont audibles est r\u00e9duite de {Tunable.S11P02.NoiseReductionDistance}\u00a0m\u00e8tres.",
         "role": "survivor",
         "character": 11,
         "tunables": {
@@ -3741,6 +3789,9 @@
                 75,
                 100,
                 125
+            ],
+            "rummageamount": [
+                1
             ]
         },
         "teachable": 35,
@@ -3771,6 +3822,9 @@
             ],
             "tokenslostonaction": [
                 1
+            ],
+            "tokensminimum": [
+                1
             ]
         },
         "teachable": 0,
@@ -3781,19 +3835,17 @@
             "perception"
         ],
         "name": "Instinct de pillard",
-        "description": "Lorsque vous \u00eates dans un rayon de {Tunable.SG_Plunderers_Instinct.ChestAuraRevealDistance}\u00a0m\u00e8tres des coffres verrouill\u00e9s et des objets l\u00e2ch\u00e9s, vous voyez leurs auras.<br><br><br>D\u00e8s que vous d\u00e9verrouillez un coffre, vous avez {Tunable.SG_Plunderers_Instinct.ModifyChestRarity}\u00a0% de chances suppl\u00e9mentaires de trouver un objet d'une raret\u00e9 sup\u00e9rieure.",
+        "description": "Vous voyez l'aura des coffres et des objets.<br><br><br>Vous d\u00e9verrouillez les coffres {Tunable.SG_Plunderers_Instinct.ActionSpeed%}\u00a0% plus vite.<br><br>D\u00e8s que vous d\u00e9verrouillez un coffre, vous avez\u00a0{Tunable.SG_Plunderers_Instinct.ModifyChestRarity}\u00a0%\u00a0de probabilit\u00e9 suppl\u00e9mentaire de trouver un objet de raret\u00e9 sup\u00e9rieure.",
         "role": "survivor",
         "character": null,
         "tunables": {
-            "chestaurarevealdistance": [
-                32,
-                48,
+            "chestitemaurarevealdistance": [
                 64
             ],
-            "itemaurarevealdistance": [
-                32,
-                48,
-                64
+            "actionspeed%": [
+                150,
+                175,
+                200
             ],
             "modifychestrarity": [
                 50
@@ -3870,20 +3922,20 @@
             "perception"
         ],
         "name": "Pr\u00e9monition",
-        "description": "Lorsque le tueur est dans un rayon de {Tunable.SG_Premonition.PerkEffectDistance}\u00a0m\u00e8tres autour de vous et dans un angle de vision de {Tunable.SG_Premonition.ActivationAngle}\u00a0degr\u00e9s, d\u00e8s que vous le regardez, vous recevez une notification sonore. Recharge\u00a0: {Tunable.SG_Premonition.Cooldown}\u00a0secondes.",
+        "description": "Tant que le tueur n'est pas en train de vous poursuivre, d\u00e8s que vous regardez dans la direction du tueur dans un rayon de {Tunable.SG_Premonition.ActivationRange}\u00a0m\u00e8tres\u00a0:<ul><li>vous recevez une notification.</li><li>vous voyez l'aura du tueur pendant {Tunable.SG_Premonition.KillerAuraRevealDuration}\u00a0s.</li></ul><br><br><br>Recharge\u00a0: {Tunable.SG_Premonition.Cooldown}\u00a0s.",
         "role": "survivor",
         "character": null,
         "tunables": {
-            "activationangle": [
-                45
+            "activationrange": [
+                32
             ],
             "cooldown": [
-                60,
-                45,
-                30
+                55,
+                50,
+                45
             ],
-            "perkeffectdistance": [
-                36
+            "killeraurarevealduration": [
+                3
             ]
         },
         "teachable": 0,
@@ -4029,8 +4081,8 @@
         "character": null,
         "tunables": {
             "actionspeed%": [
-                3,
-                6,
+                7,
+                8,
                 9
             ]
         },
@@ -4161,9 +4213,9 @@
         "character": 24,
         "tunables": {
             "duration": [
-                20,
-                25,
-                30
+                13,
+                14,
+                15
             ],
             "requireddistance": [
                 16
@@ -4229,6 +4281,10 @@
         "role": "survivor",
         "character": 25,
         "tunables": {
+            "26p03": [
+                500,
+                4
+            ],
             "requiredprogress%": [
                 40
             ],
@@ -4436,9 +4492,9 @@
         "character": 29,
         "tunables": {
             "healingbonus%": [
-                25,
                 30,
-                35
+                35,
+                40
             ]
         },
         "teachable": 35,
@@ -4587,9 +4643,9 @@
         "character": 32,
         "tunables": {
             "actionspeedbonus%": [
-                12,
-                14,
-                16
+                40,
+                45,
+                50
             ]
         },
         "teachable": 30,
@@ -4733,12 +4789,12 @@
         "character": 34,
         "tunables": {
             "boostduration": [
-                100,
-                110,
-                120
+                80,
+                85,
+                90
             ],
             "extrarepairspeed%": [
-                5
+                10
             ]
         },
         "teachable": 35,
@@ -5090,14 +5146,14 @@
             "strategy"
         ],
         "name": "B\u00e9n\u00e9diction\u00a0: Illumination",
-        "description": "En \u00e9tant pr\u00e8s d'un totem, utilisez {Input.ActivatableButton1} pour le b\u00e9nir et cr\u00e9er un totem de b\u00e9n\u00e9diction unique qui combine toutes vos b\u00e9n\u00e9dictions.<br><br>Les survivants dans le rayon de la b\u00e9n\u00e9diction\u00a0:<ul><li>voient l'aura des coffres.</li><li>voient l'aura des g\u00e9n\u00e9rateurs.</li></ul><br><br>Tant que vous avez un totem de b\u00e9n\u00e9diction, vous b\u00e9nissez et purifiez les totems {Tunable.S40P02.ActionSpeed%}\u00a0% plus vite.",
+        "description": "En \u00e9tant pr\u00e8s d'un totem, utilisez {Input.ActivatableButton1} pour le b\u00e9nir et cr\u00e9er un totem de b\u00e9n\u00e9diction unique qui combine toutes vos b\u00e9n\u00e9dictions.<br><br>Les survivants dans le rayon de la b\u00e9n\u00e9diction\u00a0:<ul><li>voient l'aura des coffres.</li><li>voient l'aura des g\u00e9n\u00e9rateurs.</li></ul><br><br>Tant que vous avez un totem de b\u00e9n\u00e9diction, vous b\u00e9nissez les totems {Tunable.S40P02.ActionSpeed%}\u00a0% plus vite.",
         "role": "survivor",
         "character": 39,
         "tunables": {
             "actionspeed%": [
-                6,
-                8,
-                10
+                150,
+                175,
+                200
             ]
         },
         "teachable": 35,
@@ -5156,6 +5212,12 @@
             ],
             "selfhealspeed%": [
                 30
+            ],
+            "ealselfnomedkits41p02": [
+                0.029999999329447746,
+                0.10499999672174454,
+                1.2000000476837158,
+                0.15000000596046448
             ]
         },
         "teachable": 35,
@@ -5398,7 +5460,7 @@
     "S45P03": {
         "categories": null,
         "name": "Endosse le fardeau",
-        "description": "Une fois par \u00e9preuve, tant que vous n'avez pas {Tunable.S45P03.MaxHooksToDeactivate}\u00a0\u00e9tats de crochet et que vous \u00eates pr\u00e8s d'un survivant accroch\u00e9, utilisez {Input.ActivatableButton2} pour le d\u00e9crocher\u00a0:<ul><li>il perd 1\u00a0\u00e9tat de crochet.</li><li>vous gagnez 1\u00a0\u00e9tat crochet.</li><li>vous hurlez.</li><li>vous devenez {Keyword.Exposed} pendant {Tunable.S45P03.ExposedDuration}\u00a0secondes.</li></ul>",
+        "description": "Une fois par partie, si vous avez moins de {Tunable.S45P03.MaxHooksToDeactivate}\u00a0\u00e9tats de crochet et que vous \u00eates pr\u00e8s d'un survivant accroch\u00e9, utilisez {Input.ActivatableButton2} pour le d\u00e9crocher\u00a0:<ul><li>il perd 1\u00a0\u00e9tat de crochet.</li><li>vous gagnez 1\u00a0\u00e9tat crochet.</li><li>vous hurlez.</li><li>vous vous retrouvez en \u00e9tat Bless\u00e9.</li><li>vous devenez {Keyword.Broken} pendant {Tunable.S45P03.BrokenDuration}\u00a0s.</li></ul>",
         "role": "survivor",
         "character": 44,
         "tunables": {
@@ -5409,6 +5471,11 @@
             ],
             "maxhookstodeactivate": [
                 2
+            ],
+            "brokenduration": [
+                160,
+                140,
+                120
             ]
         },
         "teachable": 40,
@@ -5417,7 +5484,7 @@
     "S46P01": {
         "categories": null,
         "name": "Ne pas nuire",
-        "description": "Pendant que vous soignez un autre survivant\u00a0:<ul><li>pour chaque \u00e9tat de crochet qu'il a, vous le soignez {Tunable.S46P01.HealSpeedBonus%}\u00a0% plus vite.</li><li>d\u00e8s que vous r\u00e9ussissez un excellent test d'habilet\u00e9 standard, vous gagnez {Tunable.S46P01.GreatSkillCheckBonus%}\u00a0% de progression de plus.</li></ul>",
+        "description": "Pendant que vous soignez un autre survivant, pour chaque \u00e9tat de crochet qu'il a\u00a0:<ul><li>vous le soignez {Tunable.S46P01.HealSpeedBonus%}\u00a0% plus vite.</li><li>les tests d'habilet\u00e9 standards excellents vous font gagner {Tunable.S46P01.GreatSkillCheckBonus%}\u00a0% de progression de plus.</li><li>les chances d'obtenir un test d'habilet\u00e9 standard augmentent de {Tunable.S46P01.SkillCheckOdds%}\u00a0%.</li></ul>",
         "role": "survivor",
         "character": 45,
         "tunables": {
@@ -5426,8 +5493,11 @@
             ],
             "healspeedbonus%": [
                 30,
-                40,
-                50
+                35,
+                40
+            ],
+            "skillcheckodds%": [
+                5
             ]
         },
         "teachable": 30,
@@ -5609,7 +5679,7 @@
     "S49P01": {
         "categories": null,
         "name": "Vie sur la route",
-        "description": "En \u00e9tat Bless\u00e9, mais pas {Keyword.Broken}, et pendant que vous r\u00e9parez un g\u00e9n\u00e9rateur\u00a0:<ul><li>d\u00e8s que vous r\u00e9ussissez un excellent test d'habilet\u00e9 standard, vous gagnez {Tunable.S49P01.TokenPerSkillCheck}\u00a0jeton.</li><li>d\u00e8s que vous ratez un test d'habilet\u00e9 standard, vous perdez {Tunable.S49P01.TokensLostOnSkillCheckFail}\u00a0jeton.</li></ul><br><br>D\u00e8s que vous avez {Tunable.S49P01.MaxTokens}\u00a0jetons, vous d\u00e9pensez tous les jetons pour soigner {Tunable.S49P01.HealingSpeedIncrease%}\u00a0% plus vite jusqu'\u00e0 ce que vous arr\u00eatiez de soigner.",
+        "description": "En \u00e9tat Bless\u00e9 et pendant que vous r\u00e9parez un g\u00e9n\u00e9rateur\u00a0:<li>d\u00e8s que vous r\u00e9ussissez un excellent test d'habilet\u00e9 standard, vous gagnez {Tunable.S49P01.TokenPerSkillCheck}\u00a0jeton.</li><li>d\u00e8s que vous ratez un test d'habilet\u00e9 standard, vous perdez {Tunable.S49P01.TokensLostOnSkillCheckFail}\u00a0jeton.</li><br><br>D\u00e8s que vous avez {Tunable.S49P01.MaxTokens}\u00a0jetons, vous pouvez vous soigner. Vous d\u00e9pensez tous les jetons pour gu\u00e9rir {Tunable.S49P01.HealingSpeedIncrease%}\u00a0% plus vite. Cet effet prend fin {Tunable.S49P01.HealingLinger}\u00a0s apr\u00e8s que vous arr\u00eatez de vous soigner.",
         "role": "survivor",
         "character": 48,
         "tunables": {
@@ -5625,7 +5695,10 @@
                 1
             ],
             "healingspeedincrease%": [
-                100
+                10
+            ],
+            "healinglinger": [
+                4
             ]
         },
         "teachable": 30,
@@ -5686,7 +5759,7 @@
         "character": 49,
         "tunables": {
             "hinderduration": [
-                6
+                4
             ],
             "requiredgeneratorprogress%": [
                 20
@@ -5824,9 +5897,9 @@
                 5
             ],
             "actionspeedbuff%": [
-                8,
-                9,
-                10
+                13,
+                14,
+                15
             ]
         },
         "teachable": 30,
@@ -5851,7 +5924,7 @@
     "S52P03": {
         "categories": null,
         "name": "Cinq coups d'avance",
-        "description": "Tant que vous \u00eates dans le rayon de terreur du tueur ou que le tueur vous pourchasse\u00a0:<ul><li>vous voyez l'aura des {Tunable.S52P03.PalletWindowAuraCount} palettes et points de saut les plus proches.</li><li>apr\u00e8s avoir renvers\u00e9 une palette, vous vous d\u00e9placez {Tunable.S52P03.ActionSpeedBuff%}\u00a0% plus t\u00f4t.</li><li>d\u00e8s que vous renversez une palette, la recharge dure {Tunable.S52P03.Cooldown}\u00a0secondes.</li></ul>",
+        "description": "Tant que vous \u00eates dans le rayon de terreur du tueur ou que le tueur vous pourchasse\u00a0:<ul><li>vous voyez l'aura des {Tunable.S52P03.PalletWindowAuraCount} palettes les plus proches.</li><li>apr\u00e8s avoir renvers\u00e9 une palette, vous vous d\u00e9placez {Tunable.S52P03.ActionSpeedBuff%}\u00a0% plus t\u00f4t.</li><li>d\u00e8s que vous renversez une palette, la recharge dure {Tunable.S52P03.Cooldown}\u00a0s.</li></ul>",
         "role": "survivor",
         "character": 51,
         "tunables": {
@@ -5970,11 +6043,6 @@
             "killerauraduration": [
                 5
             ],
-            "cooldown": [
-                40,
-                35,
-                30
-            ],
             "othersurvivorauraduration": [
                 5
             ]
@@ -5989,11 +6057,6 @@
         "role": "survivor",
         "character": 53,
         "tunables": {
-            "permanentprogressamount": [
-                1,
-                1.5,
-                2
-            ],
             "regressionmodifier": [
                 50
             ],
@@ -6032,7 +6095,7 @@
             "cruelty"
         ],
         "name": "Garder le meilleur pour la fin",
-        "description": "D\u00e8s que vous blessez un survivant qui n'est pas l'obsession avec une attaque de base, vous gagnez {Tunable.K06P01.TokensGainedOnHit}\u00a0jeton, jusqu'\u00e0 {Tunable.K06P01.MaxTokens} au maximum.<br><br>Pour chaque jeton, votre recharge d'attaque de base est {Tunable.K06P01.AttackReductionPerToken%}\u00a0% plus courte.<br><br>D\u00e8s que l'obsession subit une blessure, vous perdez {Tunable.K06P01.TokensLostOnHit}\u00a0jetons.<br><br>Si l'obsession meurt, vous ne pourrez plus gagner de jetons.",
+        "description": "Chaque fois que vous infligez des d\u00e9g\u00e2ts \u00e0 un survivant qui n\u2019est pas l\u2019Obsession avec une attaque de base, vous gagnez {Tunable.K06P01.TokensGainedOnHit}\u00a0jeton, jusqu\u2019\u00e0 un maximum de {Tunable.K06P01.MaxTokens}.<br><br>Pour chaque jeton, le temps de recharge de vos attaques de base r\u00e9ussies est r\u00e9duit de {Tunable.K06P01.AttackReductionPerToken%}\u00a0%.<br><br>Chaque fois que l\u2019Obsession est bless\u00e9e, vous perdez {Tunable.K06P01.TokensLostOnHit}\u00a0jetons.<br><br>Lorsque l\u2019Obsession est morte, vous ne pouvez pas gagner de jetons.",
         "role": "killer",
         "character": 268435461,
         "tunables": {
@@ -6137,20 +6200,17 @@
             "adaptation"
         ],
         "name": "Viande glissante",
-        "description": "Vous avez jusqu'\u00e0 {Tunable.SG_Slippery_Meat.ExtraAttempts} tentatives pour vous d\u00e9crocher vous-m\u00eame et avez {Tunable.SG_Slippery_Meat.HookEscapeChance%}\u00a0% de chances en plus pour y parvenir.",
+        "description": "Les autres survivants vous d\u00e9crochent {Tunable.SG_Slippery_Meat.UnhookSpeedModifier}\u00a0% plus vite.<br><br><br>D\u00e8s qu'on vous d\u00e9croche, vous gagnez\u00a0{Tunable.SG_Slippery_Meat.UnhookHasteBonus}\u00a0% de Rapidit\u00e9 en plus.",
         "role": "survivor",
         "character": null,
         "tunables": {
-            "hookescapechance%": [
-                2,
-                3,
-                4
+            "unhookspeedmodifier": [
+                90,
+                95,
+                100
             ],
-            "extraattempts": [
-                6
-            ],
-            "hookescapefailurepenaltyreduction%": [
-                60
+            "unhookhastebonus": [
+                5
             ]
         },
         "teachable": 0,
@@ -6165,14 +6225,6 @@
         "role": "killer",
         "character": null,
         "tunables": {
-            "duration": [
-                70,
-                80,
-                90
-            ],
-            "hemmorhageboost%": [
-                25
-            ],
             "modifyinjuredbleedingfrequency%": [
                 50,
                 75,
@@ -6187,30 +6239,13 @@
             "perception"
         ],
         "name": "Petit gibier",
-        "description": "D\u00e8s que vous regardez un totem dans un rayon de {Tunable.SG_Small_Game.PerkEffectDistance}\u00a0m\u00e8tres et un angle de vision de {Tunable.SG_Small_Game.DetectionConeAngle}\u00a0degr\u00e9s, vous recevez une notification. Recharge\u00a0: {Tunable.SG_Small_Game.Cooldown}\u00a0secondes.<br><br>D\u00e8s qu'un survivant purifie un totem, vous gagnez {Tunable.SG_Small_Game.TokensPerTotem}\u00a0jeton, jusqu'\u00e0 un maximum de {Tunable.SG_Small_Game.MaxTokens}.<br><br>Chaque jeton r\u00e9duit l'angle de vision de {Tunable.SG_Small_Game.ConeAngleReduction}\u00a0degr\u00e9s.",
+        "description": "Vous vous l'aura d'un totem dans un rayon de {Tunable.SG_Small_Game.TotemAuraRevealRange}\u00a0m\u00e8tres autour de lui.",
         "role": "survivor",
         "character": null,
         "tunables": {
-            "tokenspertotem": [
-                1
-            ],
-            "maxtokens": [
-                5
-            ],
-            "coneanglereduction": [
-                5
-            ],
-            "cooldown": [
-                14,
-                12,
-                10
-            ],
-            "detectionconeangle": [
-                45
-            ],
-            "perkeffectdistance": [
-                8,
+            "totemaurarevealrange": [
                 10,
+                11,
                 12
             ]
         },
@@ -6222,23 +6257,26 @@
             "concealment"
         ],
         "name": "Unique survivant",
-        "description": "Lorsqu'un survivant meurt, vous gagnez {Tunable.S06P01.TokensPerDeadSurvivor}\u00a0jeton.<br><br>Pour chaque jeton, dans un rayon de {Tunable.S06P01.StealthPerMissingSurvivorDistance}\u00a0m\u00e8tres, le tueur ne peut pas voir votre aura.<br><br>Lorsque tous les survivants sont morts\u00a0:<ul><li>vous r\u00e9parez {Tunable.S06P01.RepairSpeedBonus%}\u00a0% plus vite.</li><li>vous ouvrez les portes de sortie {Tunable.S06P01.EscapeActionSpeeds%}\u00a0% plus vite.</li><li>vous d\u00e9verrouillez la trappe {Tunable.S06P01.EscapeActionSpeeds%}\u00a0% plus vite.</li></ul><br><br>Lorsque l'\u00e9preuve commence, la probabilit\u00e9 que vous soyez l'obsession est plus \u00e9lev\u00e9e.",
+        "description": "D\u00e8s que vous vous faites accrocher ou qu'un g\u00e9n\u00e9rateur est termin\u00e9, vous gagnez {Tunable.S06P01.UnhookSurvivorToken}\u00a0jeton, jusqu'\u00e0 {Tunable.S06P01.MaxTokens} au maximum.<br><br>Pour chaque jeton, les autres survivants ouvrent les portes de sortie {Tunable.S06P01.ExitGateSpeedPerToken}\u00a0% plus vite.<br><br>Quand vous \u00eates le dernier survivant, si vous avez au moins {Tunable.S06P01.TokenAmountTreshold}\u00a0jetons\u00a0:<ul><li>vous pouvez d\u00e9verrouiller la trappe.</li><li>pour chaque jeton, le tueur ne peut pas voir votre aura pendant {Tunable.S06P01.AuraBlockingDurationPerToken}\u00a0s.</li></ul>",
         "role": "survivor",
         "character": 5,
         "tunables": {
-            "escapeactionspeeds%": [
-                50
-            ],
-            "repairspeedbonus%": [
-                75
-            ],
-            "stealthpermissingsurvivordistance": [
-                20,
-                22,
-                24
-            ],
-            "tokensperdeadsurvivor": [
+            "unhooksurvivortoken": [
                 1
+            ],
+            "maxtokens": [
+                6
+            ],
+            "exitgatespeedpertoken": [
+                10
+            ],
+            "tokenamounttreshold": [
+                3
+            ],
+            "aurablockingdurationpertoken": [
+                6,
+                8,
+                10
             ]
         },
         "teachable": 0,
@@ -6249,14 +6287,14 @@
             "adaptation"
         ],
         "name": "Solidarit\u00e9",
-        "description": "Lorsque vous \u00eates en \u00e9tat Bless\u00e9 et en train de soigner un autre survivant sans trousse de soins, vous gagnez aussi une progression de soins \u00e0 une vitesse de {Tunable.S16P01.HealRatio}\u00a0%.",
+        "description": "Lorsque vous \u00eates en \u00e9tat Bless\u00e9 et en train de soigner un autre survivant, vous gagnez aussi une progression de soins \u00e0 une vitesse de {Tunable.S16P01.HealRatio}\u00a0%.",
         "role": "survivor",
         "character": 15,
         "tunables": {
             "healratio": [
-                50,
-                60,
-                70
+                65,
+                70,
+                75
             ]
         },
         "teachable": 30,
@@ -6293,15 +6331,15 @@
         "character": null,
         "tunables": {
             "cooldown": [
-                5
+                3
             ],
             "crowloudnoisechance%": [
                 100
             ],
             "notificationrange": [
-                20,
-                28,
-                36
+                36,
+                38,
+                40
             ]
         },
         "teachable": 0,
@@ -6313,20 +6351,23 @@
             "strategy"
         ],
         "name": "Frisson",
-        "description": "Dans un rayon de {Tunable.SG_Spine_Chill.Range}\u00a0m\u00e8tres, d\u00e8s que le tueur vous regarde, vous recevez une alerte sonore.<br><br>Tant que le tueur vous regarde dans un rayon de {Tunable.SG_Spine_Chill.Range}\u00a0m\u00e8tres\u00a0:<ul><li>vous b\u00e9nissez et vous purifiez les totems {Tunable.SG_Spine_Chill.ActionSpeed%}\u00a0% plus vite.</li><li>vous soignez {Tunable.SG_Spine_Chill.ActionSpeed%}\u00a0% plus vite.</li><li>vous ouvrez les portes de sortie {Tunable.SG_Spine_Chill.ActionSpeed%}\u00a0% plus vite.</li><li>vous r\u00e9parez les g\u00e9n\u00e9rateurs {Tunable.SG_Spine_Chill.ActionSpeed%}\u00a0% plus vite.</li><li>vous sabotez les crochets {Tunable.SG_Spine_Chill.ActionSpeed%}\u00a0% plus vite.</li><li>vous d\u00e9crochez les survivants {Tunable.SG_Spine_Chill.ActionSpeed%}\u00a0% plus vite.</li><li>vous d\u00e9verrouillez les coffres {Tunable.SG_Spine_Chill.ActionSpeed%}\u00a0% plus vite.</li></ul>",
+        "description": "D\u00e8s que le tueur vous regarde dans un rayon de {Tunable.SG_Spine_Chill.KillerRange}\u00a0m\u00e8tres\u00a0:<ul><li>vous recevez une notification.</li><li>vous ne pouvez pas hurler pendant {Tunable.SG_Spine_Chill.EffectDuration}\u00a0s.</li><li>vous franchissez les points de saut {Tunable.SG_Spine_Chill.VaultSpeedModifier}\u00a0% plus vite pendant {Tunable.SG_Spine_Chill.EffectDuration}\u00a0s.</li></ul><br><br>Recharge\u00a0: {Tunable.SG_Spine_Chill.CooldownTime}s",
         "role": "survivor",
         "character": null,
         "tunables": {
-            "actionspeed%": [
-                2,
-                4,
-                6
+            "killerrange": [
+                40
             ],
-            "lingerduration": [
-                0.5
+            "vaultspeedmodifier": [
+                10
             ],
-            "range": [
-                36
+            "effectduration": [
+                12
+            ],
+            "cooldowntime": [
+                40,
+                35,
+                30
             ]
         },
         "teachable": 0,
@@ -6379,7 +6420,7 @@
             "strategy"
         ],
         "name": "En planque",
-        "description": "En vous cachant pendant {Tunable.S12P03.TokenChargeTime}\u00a0secondes dans le rayon de terreur du tueur, vous gagnez {Tunable.S12P03.TokensGained} jeton, jusqu'\u00e0 un maximum de {Tunable.S12P03.MaxTokens}.<br><br>D\u00e8s que vous r\u00e9ussissez un bon test d'habilet\u00e9 standard, vous d\u00e9pensez {Tunable.S12P03.TokensSpent} jeton\u00a0:<ul><li>le bon test d'habilet\u00e9 devient un excellent test d'habilet\u00e9.</li><li>vous gagnez {Tunable.S12P03.BonusProgress%}\u00a0% suppl\u00e9mentaires de progression.</li></ul>",
+        "description": "Apr\u00e8s avoir pass\u00e9 {Tunable.S12P03.TokenChargeTime}\u00a0s \u00e0 vous cacher \u00e0 moins de {Tunable.S12P03.TokenChargeRange}\u00a0m\u00e8tres du tueur, en restant dans son rayon de terreur, vous gagnez {Tunable.S12P03.TokensGained}\u00a0jeton, jusqu'\u00e0 un maximum de {Tunable.S12P03.MaxTokens}.<br><br>Tant que vous avez au moins {Tunable.S12P03.MinimumTokensRequired}\u00a0jeton, les tests d'habilet\u00e9 standards sont remplac\u00e9s par des tests d'habilet\u00e9 sp\u00e9ciaux. R\u00e9ussir un test d'habilet\u00e9 sp\u00e9cial donne {Tunable.S12P03.AdditionalProgressGained}\u00a0% de progression suppl\u00e9mentaire.<br><br><br>La r\u00e9ussite ou l'\u00e9chec d'un test d'habilet\u00e9 sp\u00e9cial fait perdre {Tunable.S12P03.TokensSpent}\u00a0jeton.",
         "role": "survivor",
         "character": 12,
         "tunables": {
@@ -6399,6 +6440,18 @@
             ],
             "tokensspent": [
                 1
+            ],
+            "additionalprogressgained": [
+                4
+            ],
+            "additionalprogresslost": [
+                4
+            ],
+            "minimumtokensrequired": [
+                1
+            ],
+            "tokenchargerange": [
+                24
             ]
         },
         "teachable": 40,
@@ -6606,13 +6659,16 @@
             "strategy"
         ],
         "name": "Ce n'est pas en train d'arriver",
-        "description": "Quand vous \u00eates en \u00e9tat Bless\u00e9, les zones des excellents tests d'habilet\u00e9 standards sont {Tunable.SG_This_Is_Not_Happening.GreatZoneSizeBonus%}\u00a0% plus grandes.",
+        "description": "Les zones des bons tests d'habilet\u00e9 standards sont {Tunable.SG_This_Is_Not_Happening.GoodBasicZoneBonus}\u00a0% plus grandes.",
         "role": "survivor",
         "character": null,
         "tunables": {
-            "greatzonesizebonus%": [
-                10,
-                20,
+            "goodbasiczonebonus": [
+                150,
+                175,
+                200
+            ],
+            "greatbasiczonebonus": [
                 30
             ]
         },
@@ -6708,14 +6764,17 @@
             "cruelty"
         ],
         "name": "Implacable",
-        "description": "D\u00e8s que vous ratez une attaque de base, votre recharge est {Tunable.KG_Unrelenting.AttackMissCooldownReduction%}\u00a0% plus courte.",
+        "description": "La recharge de votre attaque de base rat\u00e9e est {Tunable.KG_Unrelenting.AttackMissCooldownReduction}\u00a0% plus courte.<br><br><br>La recharge de votre attaque de base r\u00e9ussie est {Tunable.KG_Unrelenting.AttackHitCooldownReduction}\u00a0% plus courte.",
         "role": "killer",
         "character": null,
         "tunables": {
-            "attackmisscooldownreduction%": [
-                20,
-                25,
-                30
+            "attackmisscooldownreduction": [
+                30,
+                35,
+                40
+            ],
+            "attackhitcooldownreduction": [
+                10
             ]
         },
         "teachable": 0,
@@ -6808,14 +6867,17 @@
             "strategy"
         ],
         "name": "Debout\u00a0!",
-        "description": "Lorsque tous les g\u00e9n\u00e9rateurs sont termin\u00e9s\u00a0:<ul><li>vous voyez l'aura des interrupteurs des portes de sortie.</li><li>pendant que vous ouvrez une porte de sortie, les autres survivants voient votre aura.</li><li>pour chaque survivant en vie, vous ouvrez les portes de sortie {Tunable.S11P01.GateOpenSpeed%}\u00a0% plus vite.</li></ul>",
+        "description": "Lorsque tous les g\u00e9n\u00e9rateurs sont termin\u00e9s\u00a0:<ul><li>vous voyez l'aura des interrupteurs des portes de sortie.</li><li>pendant que vous ouvrez une porte de sortie, les autres survivants voient votre aura.</li><li>vous ouvrez les portes de sortie {Tunable.S11P01.GateOpenSpeedSelf%}\u00a0% plus vite, avec un bonus de {Tunable.S11P01.GateOpenSpeedOther%}\u00a0% de plus pour chaque autre survivant en vie.</li></ul>",
         "role": "survivor",
         "character": 11,
         "tunables": {
-            "gateopenspeed%": [
+            "gateopenspeedself%": [
                 8,
-                10,
-                12.5
+                9,
+                10
+            ],
+            "gateopenspeedother%": [
+                20
             ]
         },
         "teachable": 30,
@@ -6831,8 +6893,8 @@
         "character": null,
         "tunables": {
             "duration": [
-                30,
-                60,
+                70,
+                80,
                 90
             ],
             "healingspeedincrease%": [
@@ -6871,17 +6933,20 @@
             "tracking"
         ],
         "name": "Murmures",
-        "description": "Dans un rayon de {Tunable.KG_Whispers.RangeToSurvivors}\u00a0m\u00e8tres d'un survivant, vous entendez al\u00e9atoirement des murmures.",
+        "description": "En \u00e9tant dans un rayon de {Tunable.KG_Whispers.RangeToSurvivors}\u00a0m\u00e8tres d'un survivant, vous entendez al\u00e9atoirement des murmures.<br><br><br>En \u00e9tant \u00e0 plus de {Tunable.KG_Whispers.RangeToSurvivors}\u00a0m\u00e8tres de distance d'un survivant, vous gagnez {Tunable.KG_Whispers.HasteAmount%}\u00a0% de {Keyword.Haste}.",
         "role": "killer",
         "character": null,
         "tunables": {
             "rangetosurvivors": [
-                48,
-                40,
-                32
+                28,
+                26,
+                24
             ],
             "timebetweenaudio": [
                 3
+            ],
+            "hasteamount%": [
+                5
             ]
         },
         "teachable": 0,
@@ -6892,19 +6957,20 @@
             "perception"
         ],
         "name": "Parfaite occasion",
-        "description": "Dans un rayon de {Tunable.S13P02.VaultablesRevealDistance}\u00a0m\u00e8tres de vous\u00a0:<ul><li>vous voyez l'aura des palettes.</li><li>vous voyez l'aura des murs destructibles.</li><li>vous voyez l'aura des points de saut.</li></ul>",
+        "description": "Vous voyez l'aura des points de saut dans un rayon de {Tunable.S13P02.VaultablesRevealDistance}\u00a0m.<br><br>Vous franchissez les points de saut {Tunable.S13P02.VaultSpeed}\u00a0% plus vite.<br><br>D\u00e8s que vous franchissez un point de saut, la recharge est de {Tunable.S13P02.Cooldown}\u00a0s.",
         "role": "survivor",
         "character": 10,
         "tunables": {
             "vaultablesrevealdistance": [
-                24,
-                28,
-                32
+                24
             ],
             "wallsrevealdistance": [
-                24,
-                28,
                 32
+            ],
+            "cooldown": [
+                40,
+                35,
+                30
             ]
         },
         "teachable": 35,
